@@ -1,5 +1,6 @@
-.wrapper {
-	border: black solid 2px;
+body {
+	background-color: grey;
+	color: white;
 	width: 900px;
 	margin: 0 auto;
 }
@@ -7,10 +8,13 @@
 
 h1 {
 	text-align: center;
+	text-shadow: 2px 2px 2px black;
 	border: solid black 2px;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
 	margin-bottom: 5px;
+	padding: 25px;
+	box-shadow: 2px 2px 2px black;
 }
 
 nav {
@@ -24,6 +28,7 @@ nav {
 }
 
 .nav li {
+	border: 2px solid black;
 	display: block;
 	width: 250px;
 	float: left;
@@ -31,10 +36,10 @@ nav {
 }
 
 section {
-	border-top: 2px black solid;
 	clear: both;
 }
 article {
+	background-color: green;
 	border-top: 2px black solid;
 	border-right: 2px black solid;
 	clear: both;

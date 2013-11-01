@@ -1,0 +1,47 @@
+.wrapper {
+	border: black solid 2px;
+	width: 900px;
+	margin: 0 auto;
+}
+
+
+h1 {
+	text-align: center;
+	border: solid black 2px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	margin-bottom: 5px;
+}
+
+nav {
+	width: 900px;
+}
+
+.nav ul{
+	list-style-type: none;	
+	text-align: center;
+
+}
+
+.nav li {
+	display: block;
+	width: 250px;
+	float: left;
+	text-align: center;
+}
+
+section {
+	border-top: 2px black solid;
+	clear: both;
+}
+article {
+	border-top: 2px black solid;
+	border-right: 2px black solid;
+	clear: both;
+	width: 300px;
+}
+
+aside {
+	width: 300px;
+	float: left;
+}

@@ -1,52 +1,168 @@
 body {
-	background-color: grey;
+	background-color: white;
 	color: white;
 	width: 900px;
-	margin: 0 auto;
+	margin: 20px auto;
+
+}
+
+.wrapper {
+	background-color: #484747;
+	overflow: hidden;
+	border: 2px solid black;
+	border-top: none;
+	box-shadow: 1px 1px 20px black;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	padding: 20px;
+	clear: both;
 }
 
 
-h1 {
+header{
+	background-color: #313131;
 	text-align: center;
 	text-shadow: 2px 2px 2px black;
 	border: solid black 2px;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
-	margin-bottom: 5px;
 	padding: 25px;
-	box-shadow: 2px 2px 2px black;
+	box-shadow: 1px 1px 20px black;color: orange;
 }
 
-nav {
-	width: 900px;
+h1, h2 {
+	background-color: #313131;
+	text-shadow: 2px 2px 2px black;
+	border: solid black 2px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	padding: 25px;
+	box-shadow: 1px 1px 20px black;
+	color: orange;
 }
 
-.nav ul{
-	list-style-type: none;	
+.nav ul {
+	box-shadow: 1px 1px 20px black;
+    width: 900px;
+    margin: 0 auto;
+    float: left;
+    background-color: black;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav li { 
+    width: 300px;
+    overflow: hidden;
+    background-color: white;
+    float: left;
+}
+
+.nav a { 
+    text-decoration: none;
+    background-color: black;
+    display: block;
+    height: 4.6875em; /*75px;*/
+    line-height: 4.6875em; /*75px;*/
+    text-align: center;
+    color: orange;
+}
+
+.nav a:visited {
+    color: white;
+    background: black;
+}
+
+.nav a:hover {
+    color: black;
+    background: orange;
+}
+
+.nav a:active {
+    color: orange;
+    background: black;
+ }
+
+.link {
+	text-decoration: none;
+	color: white;
+}
+
+.link:hover {
+	color: orange;
+}
+p {
+	text-align: justify;
+}
+
+#intent h2 {
+	border-top: 2px solid black;
+}
+
+h2 {
 	text-align: center;
-
+	padding-top: 20px;
+	border-top: 2px black solid;	
 }
 
-.nav li {
-	border: 2px solid black;
-	display: block;
-	width: 250px;
-	float: left;
+#comp-container {
+	width: 100%;
+	overflow: hidden;
+	
+}
+
+#comp1 h3, h4 {
 	text-align: center;
+	width: 260px;
 }
 
-section {
-	clear: both;
-}
-article {
-	background-color: green;
-	border-top: 2px black solid;
-	border-right: 2px black solid;
-	clear: both;
-	width: 300px;
+#comp2 h3, h4 {
+	text-align: center;
+	width: 260px;
 }
 
-aside {
-	width: 300px;
+#comp3 h3, h4 {
+	text-align: center;
+	width: 260px;
+}
+
+article#comp1 {
+	background: #313131;
+	width: 260px;
+	margin: 5px;
+	padding: 5px;
 	float: left;
+}
+
+article#comp2 {
+	background: #313131;
+	width: 260px;
+	margin: 5px;
+	padding: 5px;
+	float: left;
+}
+
+article#comp3 {
+	background: #313131;
+	width: 260px;
+	margin: 5px;
+	padding: 5px;
+	float: left;
+}
+
+footer {
+	text-align: center;
+	border-top: 2px solid black;
+	padding-top: 15px;
+}
+
+footer a {
+	text-decoration: none;
+	color: #ffa700;
+	text-shadow: 2px 2px 2px black;
+}
+
+footer a:hover {
+	color: white;
 }

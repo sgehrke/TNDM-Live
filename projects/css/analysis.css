@@ -110,22 +110,22 @@ h2 {
 
 #comp1 h3, h4 {
 	text-align: center;
-	width: 260px;
+	width: 263px;
 }
 
 #comp2 h3, h4 {
 	text-align: center;
-	width: 260px;
+	width: 265px;
 }
 
 #comp3 h3, h4 {
 	text-align: center;
-	width: 260px;
+	width: 265px;
 }
 
 article#comp1 {
 	background: #313131;
-	width: 260px;
+	width: 265px;
 	margin: 5px;
 	padding: 5px;
 	float: left;
@@ -133,7 +133,7 @@ article#comp1 {
 
 article#comp2 {
 	background: #313131;
-	width: 260px;
+	width: 265px;
 	margin: 5px;
 	padding: 5px;
 	float: left;
@@ -141,7 +141,7 @@ article#comp2 {
 
 article#comp3 {
 	background: #313131;
-	width: 260px;
+	width: 265px;
 	margin: 5px;
 	padding: 5px;
 	float: left;

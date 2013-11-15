@@ -28,6 +28,7 @@ h2 {
 
 p {
 	font-family: oriya MN, arial;
+	padding: 20px;
 }
 /*------------------HEADER---------------------*/
 #header {
@@ -79,9 +80,10 @@ nav li {
 	display: block;
 	float: left;
 	height: 100px;
+	line-height: 100px;
 	font-family: pacifico;
 	text-align: center;
-	width: 115px;
+	width: 16.6666667%;
 }
    
 /*

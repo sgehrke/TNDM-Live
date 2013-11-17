@@ -202,6 +202,10 @@ a:active {
 	box-shadow: 2px 2px 10px black;
 }
 
+.main_content img {
+	padding: 0px;
+}
+
 /*------------About---------------*/
 
 .owner {
@@ -219,7 +223,7 @@ footer {
 	height: 100px;
 	background: url('../images/bg_text_texture.png');
 	text-align: center;	
-}
+	}
 
 			
 }

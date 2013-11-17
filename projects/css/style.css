@@ -220,9 +220,8 @@ footer {
 	clear: both;
 	width: 100%;
 	height: 100px;
-	background: url("../images/bg-blacktexture.png");
+	background: url('../images/bg_text_texture.png');
 	text-align: center;	
-	color: white;
 	}
 
 			
@@ -233,35 +232,8 @@ footer {
    Media Queries
    ========================================================================== */
 
-
-/* Tablet Portrait size standard 960 (devices and browsers)*/
-    @media screen and (min-width: 768px) and (max-width: 959px) { 
-
-
-
-}
-
-/* Mobile Landscape size tablet portrait (device and browser)  */
-    @media screen and (min-width: 480px) and (max-width: 767px) { 
-
-
-#header {
-	display: none;
-
-}
-
-}
-
-
-
-
-
-
-
-
-
-/* Mobile Portrait size to mobile landscape (devices and browsers) */
-     @media screen and (max-width: 479px) { }
+/* Tablet Portrait size to Base 996px */
+@media only screen and (min-width: 768px) and (max-width: 995px) {
 
 .logo {
 	width: 100px;
@@ -273,3 +245,22 @@ footer {
 .logo img {
 	padding: 15px 0px;
 }
+
+
+}
+
+/* All Mobile Sizes */
+@media only screen and (max-width: 768px) {
+
+
+}
+
+/* Mobile Landscape Size to Tablet Portrait */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+/* Mobile Portrait Size to Mobile Landscape Size */
+@media only screen and (max-width: 479px) {}
+
+
+
+

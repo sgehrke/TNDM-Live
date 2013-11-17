@@ -241,24 +241,14 @@ footer {
 
 .logo {
 	width: 100px;
-	height: 100px;
-	background: url('../images/bg_text_texture.png');
 	box-shadow: none;
 	margin: 0;
 	display: block;
 	float: left;
 }
 
-.title {
-	margin: 0 20px;
-	}	
 
-.feature {
-	width: 768px;
 
-}
-
-	
 }
 
 /* All Mobile Sizes */
@@ -274,8 +264,11 @@ footer {
 	float: left;
 }
 
+#header {
+	margin: 0 auto;
+
 .title {
-	margin: 0 20px;
+	margin: 0 -100px 0 0;
 	}	
 
 .feature {

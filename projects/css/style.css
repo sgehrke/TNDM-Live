@@ -3,9 +3,7 @@ Responsive 996px grid system ~ Style CSS.
 Copyright 2013, Josh Cope
 */
 
-/* =============================================================================
-   Site Styles
-   ========================================================================== */
+/* ===============Site Styles=============================== */
 
 body {
 	background: 
@@ -228,9 +226,7 @@ footer {
 
 			
 }
-/* =============================================================================
-   Page Styles
-   ========================================================================== */
+
 
 /* =============================================================================
    Media Queries
@@ -238,6 +234,18 @@ footer {
 
 /* Tablet Portrait size to Base 996px */
 @media only screen and (min-width: 768px) and (max-width: 995px) {
+
+.logo {
+	width: 100px;
+	height: 100px;
+	margin-left: 10px;
+	display: block;
+	float: left;
+}
+.logo img {
+	padding: 15px 0px;
+}
+
 
 }
 
@@ -254,9 +262,5 @@ footer {
 @media only screen and (max-width: 479px) {}
 
 
-/* =============================================================================
-   Font-Face
-   ========================================================================== */
-/* This is the proper syntax for an @font-face file
 
 

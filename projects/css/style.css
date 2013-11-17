@@ -237,7 +237,29 @@ footer {
    ========================================================================== */
 
 /* Tablet Portrait size to Base 996px */
-@media only screen and (min-width: 768px) and (max-width: 995px) {}
+@media only screen and (min-width: 768px) and (max-width: 995px) {
+
+.logo {
+	width: 100px;
+	height: 100px;
+	background: url('../images/bg_text_texture.png');
+	box-shadow: none;
+	margin: 0;
+	display: block;
+	float: left;
+}
+
+.title {
+	margin: 0 20px;
+	}	
+
+.feature {
+	width: 768px;
+
+}
+
+	
+}
 
 /* All Mobile Sizes */
 @media only screen and (max-width: 768px) {
@@ -250,8 +272,16 @@ footer {
 	margin: 0;
 	display: block;
 	float: left;
-}	
+}
 
+.title {
+	margin: 0 20px;
+	}	
+
+.feature {
+	width: 768px;
+
+}
 }
 
 /* Mobile Landscape Size to Tablet Portrait */

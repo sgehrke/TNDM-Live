@@ -85,7 +85,7 @@ p {
 
 .socialmedia li {
 	display: block;
-	margin-top: -10px;
+	margin-top: 5px;
 	padding: 0;
 	width: 30px;
 	float: left;
@@ -239,42 +239,12 @@ footer {
 /* Tablet Portrait size to Base 996px */
 @media only screen and (min-width: 768px) and (max-width: 995px) {
 
-.logo {
-	width: 100px;
-	box-shadow: none;
-	margin: 0;
-	display: block;
-	float: left;
-}
-
-
-
 }
 
 /* All Mobile Sizes */
 @media only screen and (max-width: 768px) {
 
-.logo {
-	width: 100px;
-	height: 100px;
-	background: url('../images/bg_text_texture.png');
-	box-shadow: none;
-	margin: 0;
-	display: block;
-	float: left;
-}
 
-#header {
-	margin: 0 auto;
-
-.title {
-	margin: 0 -100px 0 0;
-	}	
-
-.feature {
-	width: 768px;
-
-}
 }
 
 /* Mobile Landscape Size to Tablet Portrait */

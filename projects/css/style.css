@@ -8,7 +8,10 @@ Copyright 2013, Josh Cope
    ========================================================================== */
 
 body {
-	background-image: url('../images/bg-texture_image.png');
+	background: 
+		url("../images/bg-texture_image.png"),
+			url("../images/bg_text_texture.png");
+		
 }
 
 @font-face {
@@ -25,6 +28,10 @@ h2 {
 	text-decoration: underline;
 }
 
+h3 {
+	padding-left: 20px;
+	text-decoration: underline;
+}
 
 p {
 	font-family: oriya MN, arial;
@@ -39,7 +46,7 @@ p {
 
 .header-contain {
 	display: block;
-	width: 996px;
+	width: 996px;  
 	margin: auto;
 }
 
@@ -55,6 +62,7 @@ p {
 .logo img {
 	padding: 25px 0px;
 }
+
 
 .title {
 	display: block;
@@ -144,8 +152,8 @@ p {
 
 .main-nav {
 	margin-left: 176px;
-	background-color: red;
 	width: 996px;
+	padding-bottom: 50px
 }
 
 nav li {
@@ -155,21 +163,65 @@ nav li {
 	font-family: pacifico;
 	text-align: center;
 	width: 120px;
+	text-shadow: 1px 1px white;
 
+}
+
+a:link {
+	color: black;
+}
+
+a:visited {
+	color: black;
+}
+
+a:hover {
+	color: white;
+	text-shadow: 1px 1px black;
+}
+
+a:active {
+	color: orange;
+	text-shadow: 1px 1px black;
+}
+	
+
+.home a {
+	color: white;
+	text-shadow: 1px 1px black;
+}
+
+.current a {
+	color: white;
+	text-shadow: 1px 1px black;
 }
 
 /*---------------Feature----------*/
 
+.feature {
+	box-shadow: 2px 2px 10px black;
+}
 
+/*------------About---------------*/
 
+.owner {
+padding: 40px;
+box-shadow: 2px 2px 10px black;
+}
 
 /*-----------------------FOOTER---------------*/
 
 footer {
+	margin: 0;
+	overflow: hidden;
+	clear: both;
 	width: 100%;
-	background-color: white;
-	text-align: center;
-	
+	height: 100px;
+	background: url('../images/bg_text_texture.png');
+	text-align: center;	
+}
+
+			
 }
 /* =============================================================================
    Page Styles

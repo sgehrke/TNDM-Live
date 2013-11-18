@@ -47,6 +47,9 @@ p {
 	display: block;
 	width: 996px;  
 	margin: auto;
+	border: 1px solid red;
+	overflow: hidden;
+
 }
 
 .logo {
@@ -65,7 +68,7 @@ p {
 .title {
 	display: block;
 	width: 480px;	
-	margin: 0 0 0 50px;
+	margin: 0 88px;
 	height: 100px;
 	background: url("../images/header_letterpress.png") no-repeat;
 	text-indent: -9999px;
@@ -76,8 +79,8 @@ p {
 .socialmedia {
 	display: block;
 	margin: 0;
-	padding: 0;
-	width: 270px;
+	padding: 0 24.5px;
+	width: 90px;
 	float: left;
 }
 
@@ -94,25 +97,19 @@ p {
 
 
 .button {
+	color: white;
     border-radius: 7px;
-	display: block;
-	width: 150px;
+	width: 139px;
 	font-family: pacifico;
 	font-size: 20px;
 	height: 35px;
-	line-height: 35px;
+	line-height: 30px;
 	text-align: center;
 	text-shadow: 1px 1px 0px black;
     background: -moz-linear-gradient(orange, #FF5800); 
     background: -webkit-linear-gradient(orange, #FF5800);
-
-}
-
-.button {
     padding: 0;
     margin: 0 auto;
-    text-align: center;
-    text-decoration: none;
 }
 
 .button:link {
@@ -135,13 +132,6 @@ p {
     color: grey;
 }
 
-.button {
-	display: block;
-	width: 139px;
-	margin-left: 0px;
-	float: left;
-	border: red 1px solid;
-}
 
 
 
@@ -162,6 +152,10 @@ nav li {
 	width: 120px;
 	text-shadow: 1px 1px white;
 
+}
+
+nav ul {
+	padding-left: 0;
 }
 
 a:link {
@@ -232,8 +226,8 @@ footer {
 /* Tablet Portrait size to Base 996px */
 @media only screen and (min-width: 768px) and (max-width: 996px) {
 
-#header {
-	width: 995px;
+.header-contain {
+	width: 768px;
 	height: 100px;
 }
 
@@ -249,15 +243,22 @@ footer {
 }
 
 .title {
-	margin-left: 5px;
+	margin: 0 40px;
+}
+
+.socialmedia {
+	width: 90px;
+	padding: 0;
+}
+
+.button {
+	width: 90px;
+	font-size: 14px;	
+	margin-top: 10px;
 }
 
 .feature {
 	height: 500px;
-}
-
-.socialmedia {
-	margin-left: -60px;
 }
 
 .main-nav { 
@@ -268,7 +269,7 @@ nav li {
 }
 }
 /* All Mobile Sizes */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
 
 #header {
 	width: 768px;

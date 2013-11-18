@@ -291,7 +291,7 @@ nav li {
 }
 
 nav li {
-	width: 100px;
+	width: 80px;
 }
 .feature {
 	height: 300px;
@@ -305,6 +305,12 @@ nav li {
 /* Mobile Landscape Size to Tablet Portrait */
 @media only screen and (min-width: 480px) and (max-width: 766px) {
 
+.main-nav {
+	width: 480px;
+}
+nav li{
+	width: 320;
+}
 
 
 
@@ -328,8 +334,14 @@ nav li {
 	display: none;
 }
 
-
+.main-nav {
+	width: 320px;
+}
+nav li{
+	width: 225px;
+}
 .button {
+	width: 100%px;
 	
 }
 

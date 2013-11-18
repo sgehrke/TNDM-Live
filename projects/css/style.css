@@ -62,7 +62,6 @@ p {
 	padding: 25px 0px;
 }
 
-
 .title {
 	display: block;
 	width: 480px;	
@@ -73,11 +72,12 @@ p {
 	float: left;	
 }
 
+
 .socialmedia {
 	display: block;
 	margin: 0;
 	padding: 0;
-	width: 290px;
+	width: 270px;
 	float: left;
 }
 
@@ -138,9 +138,7 @@ p {
 .button {
 	display: block;
 	width: 139px;
-	margin-left: 20px;
-	text-align: center;
-	text-decoration: none;
+	margin-left: 0px;
 	float: left;
 	border: red 1px solid;
 }
@@ -224,9 +222,6 @@ footer {
 	height: 100px;
 	background: url('../images/bg_text_texture.png');
 	text-align: center;	
-	}
-
-			
 }
 
 
@@ -237,68 +232,118 @@ footer {
 /* Tablet Portrait size to Base 996px */
 @media only screen and (min-width: 768px) and (max-width: 995px) {
 
+#header {
+	width: 995px;
+	height: 100px;
+}
+
 .logo {
 	width: 100px;
 	height: 100px;
-	margin-left: 10px;
-	display: block;
-	float: left;
+	box-shadow: none;
+	margin-left: 5px;
 }
+
 .logo img {
-	padding: 15px 0px;
+	padding: 10px 10px;
 }
 
-
+.title {
+	margin-left: 5px;
 }
 
+.feature {
+	height: 500px;
+}
+
+.socialmedia {
+	margin-left: -60px;
+}
+
+.main-nav { 
+	margin-left: 0;	
+}
+nav li {
+	width: 110px;
+}
+}
 /* All Mobile Sizes */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 
-
-
-.logo {
-	width: 100px;
+#header {
+	width: 768px;
 	height: 100px;
-	margin-left: 10px;
-	display: block;
-	float: left;
 }
-.logo img {
-	padding: 15px 0px;
+.logo {
+	display: none;
 }
+.title {
+	margin: 0 auto;
+}
+
+.socialmedia {
+	clear: both;
+	margin: 0 auto;
+}
+
+.main-nav {
+	margin-left: 0;
+}
+
+nav li {
+	width: 100px;
+}
+.feature {
+	height: 300px;
+}
+
+
+
 
 }
 
 /* Mobile Landscape Size to Tablet Portrait */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-	
-.title {
-display: none;
-}	
-	
-	
+@media only screen and (min-width: 480px) and (max-width: 766px) {
+
+
+
+
+
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size */
 @media only screen and (max-width: 479px) {
 	
+#header {
+	width: 100%;
+	height: 50px;
+}
+
+.header-contain {
+	display: block;
+	width: 100%;  
+}
+
+.logo {
+	display: none;
+}
+
+
+.button {
 	
+}
+
 .title {
-display: none;
+	display: none;	
 }	
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+.feature {
+	height: 180px;
+	clear: both;
+}	
+
 }
 
 

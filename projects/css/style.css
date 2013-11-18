@@ -230,7 +230,7 @@ footer {
    ========================================================================== */
 
 /* Tablet Portrait size to Base 996px */
-@media only screen and (min-width: 768px) and (max-width: 995px) {
+@media only screen and (min-width: 768px) and (max-width: 996px) {
 
 #header {
 	width: 995px;
@@ -268,7 +268,7 @@ nav li {
 }
 }
 /* All Mobile Sizes */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
 
 #header {
 	width: 768px;
@@ -303,7 +303,7 @@ nav li {
 }
 
 /* Mobile Landscape Size to Tablet Portrait */
-@media only screen and (min-width: 480px) and (max-width: 766px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
 
 .main-nav {
 	width: 480px;

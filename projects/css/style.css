@@ -269,6 +269,12 @@ footer {
 nav li {
 	width: 128px;
 }
+
+.owner {
+	box-shadow: none;
+	padding: 10px;
+}
+
 }
 /* All Mobile Sizes */
 @media only screen and (max-width: 767px) {}
@@ -284,12 +290,6 @@ nav li {
 
 .logo {
 	margin-left: 156px;
-	float: left;
-}
-
-.logo img {
-	clear: both;
-
 }
 
 .title {
@@ -297,18 +297,15 @@ nav li {
 }
 
 .socialmedia {
-	float: left;
+	position: absolute;
 }
 
 .button {
-	margin-top: 70px;
-	width: 480px
-	
-	float: left;
+	margin: 5px 17px;		
 }
 
 .main-nav {
-	margin-left: 0;
+	margin: 50px 0 0 0;
 	width: 456px;
 	font-size: 14px;
 	clear: both;
@@ -324,31 +321,42 @@ nav li {
 	clear: both;
 }
 
+.owner {
+	box-shadow: none;
+	padding: 100px;
+}
+
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size */
 @media only screen and (max-width: 479px) {
 	
-#header {
-	height: 50px;
-}
 
 .header-contain {
-	background: black;
+	width: 320px;
 }
 
 .logo {
-	display: none;
+	width: 100px;
+	height: 100px;
+	margin-left: 110px
 }
 
+.logo img {
+	padding: 10px 0;
+}
+
+.socialmedia {
+	position: absolute;
+	margin: 0;
+}
 .main-nav {
-	width: 320px;
+	width: 479px;
 }
 nav li{
-	width: 225px;
+	width: 480px;
 }
 .button {
-	width: 100%px;
 	
 }
 

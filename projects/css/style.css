@@ -348,16 +348,22 @@ nav li {
 
 .socialmedia {
 	position: absolute;
-	margin: 0;
+	margin-left: -15px;
 }
+
 .main-nav {
-	width: 479px;
+	margin: 0;
+	width: 320px;
 }
+
 nav li{
-	width: 480px;
+	width: 320px;
+	box-shadow: 1px 1px 10px black;	
 }
 .button {
-	
+	width: 100px;
+	margin: 5px 0 0 7px;
+	font-size: 14px;
 }
 
 .title {

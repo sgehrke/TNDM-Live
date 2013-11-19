@@ -284,6 +284,12 @@ nav li {
 
 .logo {
 	margin: 0 156px;
+	float: left;
+}
+
+.logo img {
+	clear: both;
+
 }
 
 .title {
@@ -297,6 +303,7 @@ nav li {
 	margin-left: 0;
 	width: 456px;
 	font-size: 14px;
+	clear: both;
 }
 
 nav li {

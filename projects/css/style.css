@@ -94,10 +94,11 @@ p {
 }
 
 /*-------------------CTA---------------*/
-
-
-.button {
+button.button a {
 	color: white;
+	text-decoration: none;
+}
+.button {
     border-radius: 7px;
 	width: 139px;
 	font-family: pacifico;
@@ -111,29 +112,6 @@ p {
     padding: 0;
     margin: 0 auto;
 }
-
-.button:link {
-    color: white;
-}
-
-.button:visited {
-    color: white;
-}
-
-.button:hover {
-    color: black;
-    background: -moz-linear-gradient(#fcf7ee 0%, #ff5800 100%); 
-    background: -webkit-linear-gradient(#fcf7ee 0%, #ff5800 100%);
-	text-shadow: 1px 1px 0px white;
-
-}
-
-.button:active {
-    color: grey;
-}
-
-
-
 
 /*--------------NAV----------------------------*/
 
@@ -357,8 +335,8 @@ nav li {
 }
 
 nav li{
-	width: 320px;
-	box-shadow: 1px 1px 10px black;	
+	width: 300px;
+	border-bottom: 1px solid black;	
 }
 .button {
 	width: 100px;

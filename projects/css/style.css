@@ -8,8 +8,7 @@ Copyright 2013, Josh Cope
 body {
 	background: 
 		url("../images/bg-texture_image.png"),
-			url("../images/bg_text_texture.png");
-		
+			url("../images/bg_text_texture.png");	
 }
 
 @font-face {

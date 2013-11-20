@@ -95,29 +95,54 @@ p {
 }
 
 /*-------------------CTA---------------*/
-button.button a {
-	color: white;
-	text-decoration: none;
-}
-
 .button {
     border-radius: 7px;
-	width: 139px;
+	display: block;
+	width: 150px;
 	font-family: pacifico;
 	font-size: 20px;
 	height: 35px;
-	line-height: 30px;
+	line-height: 35px;
 	text-align: center;
 	text-shadow: 1px 1px 0px black;
     background: -moz-linear-gradient(orange, #FF5800); 
     background: -webkit-linear-gradient(orange, #FF5800);
-    padding: 0;
-    margin: 0 auto;
+
 }
 
-.button a:hover {
-	color: black;
-	text-shadow: 1px 1px  white;
+.button {
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button:link {
+    color: white;
+}
+
+.button:visited {
+    color: white;
+}
+
+.button:hover {
+    color: black;
+    background: -moz-linear-gradient(#fcf7ee 0%, #ff5800 100%); 
+    background: -webkit-linear-gradient(#fcf7ee 0%, #ff5800 100%);
+	text-shadow: 1px 1px 0px white;
+
+}
+
+.button:active {
+    color: grey;
+}
+
+.button {
+	display: block;
+	width: 139px;
+	margin-left: 0px;
+	float: left;
+	border: red 1px solid;
 }
 
 /*--------------NAV----------------------------*/
@@ -296,7 +321,7 @@ nav li {
 }
 
 .button {
-	margin: 5px 17px;		
+	margin: 6px 15px;		
 }
 
 .main-nav {

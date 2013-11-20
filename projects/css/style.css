@@ -197,7 +197,7 @@ a:active {
 	text-shadow: 1px 1px black;
 }
 
-/*---------------Feature----------*/
+/*---------------Feature/Body----------*/
 
 
 .feature {
@@ -217,6 +217,10 @@ a:active {
 #itunes {
 	width: 75%;
 	margin: 0 auto;
+}
+
+#reviews {
+	margin: 10px 0;
 }
 
 /*------------About---------------*/

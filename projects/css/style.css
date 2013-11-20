@@ -25,16 +25,19 @@ h1, h2, h3{
 h2 {
 	text-align: center;
 	text-decoration: underline;
+	margin: 10px;
 }
 
 h3 {
-	padding-left: 20px;
+	margin: 10px;
+	text-align: center;
 	text-decoration: underline;
 }
 
 p {
 	font-family: oriya MN, arial;
-	padding: 20px;
+	padding: 10px;
+	margin: 0 auto;
 }
 /*------------------HEADER---------------------*/
 #header {
@@ -58,6 +61,7 @@ p {
 	display: block;
 	float: left;
 }
+
 .logo img {
 	padding: 25px 0px;
 }
@@ -65,7 +69,7 @@ p {
 .title {
 	display: block;
 	width: 480px;	
-	margin: 0 0 0 50px;
+	margin: 0 88px;
 	height: 100px;
 	background: url("../images/header_letterpress.png") no-repeat;
 	text-indent: -9999px;
@@ -76,8 +80,8 @@ p {
 .socialmedia {
 	display: block;
 	margin: 0;
-	padding: 0;
-	width: 270px;
+	padding: 0 24.5px;
+	width: 90px;
 	float: left;
 }
 
@@ -91,59 +95,30 @@ p {
 }
 
 /*-------------------CTA---------------*/
-
+button.button a {
+	color: white;
+	text-decoration: none;
+}
 
 .button {
     border-radius: 7px;
-	display: block;
-	width: 150px;
+	width: 139px;
 	font-family: pacifico;
 	font-size: 20px;
 	height: 35px;
-	line-height: 35px;
+	line-height: 30px;
 	text-align: center;
 	text-shadow: 1px 1px 0px black;
     background: -moz-linear-gradient(orange, #FF5800); 
     background: -webkit-linear-gradient(orange, #FF5800);
-
-}
-
-.button {
     padding: 0;
     margin: 0 auto;
-    text-align: center;
-    text-decoration: none;
 }
 
-.button:link {
-    color: white;
+.button a:hover {
+	color: black;
+	text-shadow: 1px 1px  white;
 }
-
-.button:visited {
-    color: white;
-}
-
-.button:hover {
-    color: black;
-    background: -moz-linear-gradient(#fcf7ee 0%, #ff5800 100%); 
-    background: -webkit-linear-gradient(#fcf7ee 0%, #ff5800 100%);
-	text-shadow: 1px 1px 0px white;
-
-}
-
-.button:active {
-    color: grey;
-}
-
-.button {
-	display: block;
-	width: 139px;
-	margin-left: 0px;
-	float: left;
-	border: red 1px solid;
-}
-
-
 
 /*--------------NAV----------------------------*/
 
@@ -162,6 +137,10 @@ nav li {
 	width: 120px;
 	text-shadow: 1px 1px white;
 
+}
+
+nav ul {
+	padding-left: 0;
 }
 
 a:link {
@@ -195,6 +174,7 @@ a:active {
 
 /*---------------Feature----------*/
 
+
 .feature {
 	box-shadow: 2px 2px 10px black;
 	width: 100%;
@@ -203,6 +183,15 @@ a:active {
 
 .services {
 	padding: 20px 0 60px 0;
+}
+
+#platinum img {
+	padding: 10px;
+}
+
+#itunes {
+	width: 75%;
+	margin: 0 auto;
 }
 
 /*------------About---------------*/
@@ -230,10 +219,10 @@ footer {
    ========================================================================== */
 
 /* Tablet Portrait size to Base 996px */
-@media only screen and (min-width: 768px) and (max-width: 995px) {
+@media only screen and (min-width: 768px) and (max-width: 996px) {
 
-#header {
-	width: 995px;
+.header-contain {
+	width: 768px;
 	height: 100px;
 }
 
@@ -249,88 +238,127 @@ footer {
 }
 
 .title {
-	margin-left: 5px;
+	margin: 0 40px;
+}
+
+.socialmedia {
+	width: 90px;
+	padding: 0;
+}
+
+.button {
+	width: 90px;
+	font-size: 14px;	
+	margin-top: 10px;
 }
 
 .feature {
 	height: 500px;
 }
 
-.socialmedia {
-	margin-left: -60px;
-}
-
 .main-nav { 
-	margin-left: 0;	
+	padding-left: 0px;
+	margin-left: 0px;	
+	width: 768px;
 }
 nav li {
-	width: 110px;
+	width: 128px;
 }
+
+.owner {
+	box-shadow: none;
+	padding: 10px;
+}
+
 }
 /* All Mobile Sizes */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {}
 
-#header {
-	width: 768px;
-	height: 100px;
+
+/* Mobile Landscape Size to Tablet Portrait */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+.header-contain {
+	width: 480px;
+	height: 150px;
 }
+
 .logo {
-	display: none;
+	margin-left: 156px;
 }
+
 .title {
-	margin: 0 auto;
+	display: none;
 }
 
 .socialmedia {
-	clear: both;
-	margin: 0 auto;
+	position: absolute;
+}
+
+.button {
+	margin: 5px 17px;		
 }
 
 .main-nav {
-	margin-left: 0;
+	margin: 0;
+	width: 456px;
+	font-size: 14px;
+	clear: both;
 }
 
 nav li {
-	width: 100px;
+	width:70px;
+	padding-left: 5px;
 }
+
 .feature {
 	height: 300px;
+	clear: both;
 }
 
-
-
-
+.owner {
+	box-shadow: none;
+	padding: 100px;
 }
-
-/* Mobile Landscape Size to Tablet Portrait */
-@media only screen and (min-width: 480px) and (max-width: 766px) {
-
-
-
-
 
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size */
 @media only screen and (max-width: 479px) {
 	
-#header {
-	width: 100%;
-	height: 50px;
-}
 
 .header-contain {
-	display: block;
-	width: 100%;  
+	width: 320px;
 }
 
 .logo {
-	display: none;
+	width: 100px;
+	height: 100px;
+	margin-left: 110px
 }
 
+.logo img {
+	padding: 10px 0;
+}
 
+.socialmedia {
+	position: absolute;
+	margin-left: -15px;
+}
+
+.main-nav {
+	margin: 0;
+	width: 320px;
+}
+
+nav li{
+	width: 300px;
+	border-bottom: 1px solid black;	
+}
 .button {
-	
+	width: 100px;
+	margin: 5px 0 0 7px;
+	font-size: 14px;
 }
 
 .title {

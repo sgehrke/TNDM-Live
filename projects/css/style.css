@@ -8,7 +8,7 @@ Copyright 2013, Josh Cope
 body {
 	background: 
 		url("../images/bg-texture_image.png"),
-			url("../images/bg_text_texture.png");	
+			url("../images/bg_text_texture.png")	
 }
 
 @font-face {
@@ -22,12 +22,14 @@ h1, h2, h3{
 }
 
 h2 {
+	font-size: 1.8em;
 	text-align: center;
 	text-decoration: underline;
 	margin: 10px;
 }
 
 h3 {
+	font-size: 1.5em;
 	margin: 10px;
 	text-align: center;
 	text-decoration: underline;
@@ -35,9 +37,11 @@ h3 {
 
 p {
 	font-family: oriya MN, arial;
-	padding: 10px;
+	padding: 10px 0 20px 0;
 	margin: 0 auto;
 }
+
+
 /*------------------HEADER---------------------*/
 #header {
 	width: 100%;
@@ -75,7 +79,6 @@ p {
 	float: left;	
 }
 
-
 .socialmedia {
 	display: block;
 	margin: 0;
@@ -106,7 +109,6 @@ p {
 	text-shadow: 1px 1px 0px black;
     background: -moz-linear-gradient(orange, #FF5800); 
     background: -webkit-linear-gradient(orange, #FF5800);
-
 }
 
 .button {
@@ -129,7 +131,6 @@ p {
     background: -moz-linear-gradient(#fcf7ee 0%, #ff5800 100%); 
     background: -webkit-linear-gradient(#fcf7ee 0%, #ff5800 100%);
 	text-shadow: 1px 1px 0px white;
-
 }
 
 .button:active {
@@ -156,11 +157,10 @@ nav li {
 	display: block;
 	float: left;
 	line-height: 50px;
-	font-family: pacifico;
+	font-family: pacifico, arial;
 	text-align: center;
 	width: 120px;
 	text-shadow: 1px 1px white;
-
 }
 
 nav ul {
@@ -205,21 +205,49 @@ a:active {
 	height: 550px;
 }
 
-.services {
-	padding: 20px 0 60px 0;
+.stories {
+	padding: 0px 0 20px 0;
 }
 
-#platinum img {
-	padding: 10px;
-}
-
-#itunes {
-	width: 75%;
-	margin: 0 auto;
+#hertzberg {
+	margin: auto;
 }
 
 #reviews {
-	margin: 10px 0;
+	margin: 10px 0 20px 0;
+}
+
+.form {
+	padding: 5px 0;
+}
+
+#form {
+	font-family: oriya MN, arial;
+}
+
+#submit {
+	color: white;
+	border-radius: 7px;
+	display: block;
+	width: 150px;
+	font-family: pacifico;
+	font-size: 20px;
+	line-height: 20px;
+	text-align: center;
+	text-shadow: 1px 1px 0px black;
+    background: -moz-linear-gradient(orange, #FF5800); 
+    background: -webkit-linear-gradient(orange, #FF5800);
+}
+
+#submit:hover {
+    color: black;
+    background: -moz-linear-gradient(#fcf7ee 0%, #ff5800 100%); 
+    background: -webkit-linear-gradient(#fcf7ee 0%, #ff5800 100%);
+	text-shadow: 1px 1px 0px white;
+}
+
+#contact {
+	padding: 0;
 }
 
 /*------------About---------------*/
@@ -237,6 +265,7 @@ footer {
 	clear: both;
 	width: 100%;
 	height: 100px;
+	line-height: 80px;
 	background: url('../images/bg_text_texture.png');
 	text-align: center;	
 }
@@ -289,6 +318,7 @@ footer {
 	margin-left: 0px;	
 	width: 768px;
 }
+
 nav li {
 	width: 128px;
 }
@@ -380,9 +410,13 @@ nav li {
 }
 
 nav li{
+	height: 62px;
+	line-height: 62px;
+	font-size: 2em;
 	width: 300px;
 	border-bottom: 1px solid black;	
 }
+
 .button {
 	width: 100px;
 	margin: 5px 0 0 7px;
@@ -391,9 +425,7 @@ nav li{
 
 .title {
 	display: none;	
-}	
-	
-	
+}		
 	
 .feature {
 	height: 180px;

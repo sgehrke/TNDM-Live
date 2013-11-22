@@ -301,6 +301,10 @@ a:active {
 	margin: 10px 0 20px 0;
 }
 
+label {
+	text-align: right;
+}
+
 .form {
 	padding: 5px 0;
 }
@@ -310,6 +314,7 @@ a:active {
 }
 
 #submit {
+	margin: 10px 0 20px 320px;
 	color: white;
 	border-radius: 7px;
 	display: block;
@@ -332,6 +337,12 @@ a:active {
 
 #contact {
 	padding: 0;
+}
+
+#map {
+	margin: 10px 13px;
+	width: 970px;
+	overflow: hidden;
 }
 
 /*------------About---------------*/
@@ -420,6 +431,15 @@ nav li {
 	padding: 10px;
 }
 
+#submit {
+	margin-left: 250px;
+}
+
+#map {
+	width: 742px;
+}
+
+
 }
 /* All Mobile Sizes */
 @media only screen and (max-width: 767px) {}
@@ -470,6 +490,18 @@ nav li {
 	height: 300px; /* Height of images */
 	position: relative;
 	overflow: hidden;
+}
+
+label {
+	text-align: left;
+}
+
+#submit {
+	margin: 0 auto;
+}
+
+#map {
+	width: 454px;
 }
 
 .owner {
@@ -529,6 +561,18 @@ nav li{
 	height: 180px;
 	clear: both;
 }	
+
+label {
+	text-align: left;
+}
+
+#submit {
+	margin: 0 auto;
+}
+
+#map {
+	width: 294px;
+}
 
 .css-carousel {
 	height: 180px; /* Height of images */

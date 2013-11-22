@@ -22,7 +22,7 @@ h1, h2, h3{
 }
 
 h2 {
-	font-size: 2em;
+	font-size: 2.5em;
 	text-align: center;
 	text-decoration: underline;
 	margin: 10px;
@@ -303,6 +303,10 @@ a:active {
 
 label {
 	text-align: right;
+}
+
+#label1 {
+	text-align: left;
 }
 
 .form {

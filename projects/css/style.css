@@ -508,6 +508,9 @@ label {
 	width: 454px;
 }
 
+#map1 {
+	padding: 0;
+}
 .owner {
 	box-shadow: none;
 	padding: 100px;
@@ -575,6 +578,7 @@ label {
 }
 
 #map {
+	padding-left: 0px;
 	width: 294px;
 }
 

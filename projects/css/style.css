@@ -22,7 +22,7 @@ h1, h2, h3{
 }
 
 h2 {
-	font-size: 2.5em;
+	font-size: 2em;
 	text-align: center;
 	text-decoration: underline;
 	margin: 10px;
@@ -500,17 +500,19 @@ label {
 	text-align: left;
 }
 
+#form {
+	padding: 0;
+}
+
 #submit {
 	margin: 0 auto;
 }
 
 #map {
+	margin: 0;
 	width: 454px;
 }
 
-#map1 {
-	padding: 0;
-}
 .owner {
 	box-shadow: none;
 	padding: 100px;
@@ -567,6 +569,10 @@ nav li{
 .feature {
 	height: 180px;
 	clear: both;
+}
+
+#form {
+	padding: 0;
 }	
 
 label {
@@ -578,9 +584,11 @@ label {
 }
 
 #map {
-	padding-left: 0px;
+	margin: 0;
 	width: 294px;
 }
+
+
 
 .css-carousel {
 	height: 180px; /* Height of images */

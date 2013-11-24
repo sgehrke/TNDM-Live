@@ -592,8 +592,6 @@ label {
 
 .css-carousel {
 	height: 180px; /* Height of images */
-	position: relative;
-	overflow: hidden;
 }
 
 }

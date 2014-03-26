@@ -595,7 +595,7 @@ label {
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size */
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 320px) {
 
 .js #menu {
 		display:none;

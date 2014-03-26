@@ -19,8 +19,11 @@
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/grid.css">
 	<link rel="stylesheet" href="css/style.css">
-
+	<script src="js/jquery-1.11.0.min.js"></script>	
 	<script src="js/modernizr-2.6.2.min.js"></script>
+	<link rel="stylesheet" href="SlickNav/slicknav.css" />
+<script src="SlickNav/jquery.slicknav.min.js"></script>
+	
 	
 </head>
 
@@ -29,7 +32,7 @@
 	<header>
 		<div id="header">	
 			<div class="header-contain">
-				<div class="logo"><a href="index.html"><img width="165" height="130" src="images/viewlogo.png" alt="logo" /></a></div>		
+				<div class="logo"><a href="index.html"><img  src="images/viewlogo.png" alt="logo" /></a></div>		
 				<h1 class="title">The New Dance Machine</h1>
 				<ul class="socialmedia">
 					<li><a href="https://twitter.com/TNDM_DJservice"><img width="48" height="48" src="images/Twitter_Icon.png" alt="titter icon" /></a></li>
@@ -53,10 +56,10 @@
 	</header>
 		<div class="container"><!-- Main container -->
 			<nav>
-				<ul class="main-nav">
-					<li><a  href="index.html">Home</a></li>
+				<ul id="menu" class="main-nav">
+					<li><a href="index.html">Home</a></li>
 					<li><a href="about.html">About</a></li>
-					<li class="current"><a href="sound.html">Sound</a></li>
+					<li class="current" ><a href="sound.html">Sound</a></li>
 					<li><a href="packages.html">Packages</a></li>
 					<li><a href="testimonials.html">Reviews</a></li>
 					<li><a href="contact_us.html">Contact us</a></li>
@@ -88,10 +91,14 @@
 
 	</div><!-- container -->
 	
-	<footer><p>Copyright &copy; The New Dance Machine DJ service 2013</p>
+	<footer><p>Copyright &copy; The New Dance Machine DJ service 2014</p>
 	</footer>	
 	
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-<script src="js/scripts.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>
+	$(function(){
+		$('#menu').slicknav();
+	});
+</script>
 </body>
 </html>

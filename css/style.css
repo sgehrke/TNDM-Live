@@ -43,7 +43,14 @@ p {
 
 
 /*------------------HEADER---------------------*/
+.slicknav_menu {
+	display: none;
+}
+
 #header {
+	position: fixed;
+	top:0px;
+	z-index: 9999;
 	width: 100%;
 	height: 100px;
 	background: url('../images/bg_text_texture.jpg');
@@ -53,6 +60,10 @@ p {
 	display: block;
 	width: 996px;  
 	margin: auto;
+}
+
+.container {
+	margin-top: 180px;
 }
 
 .logo {
@@ -162,11 +173,17 @@ a.button:active {
 /*--------------NAV----------------------------*/
 
 .main-nav {
-	margin-left: 176px;
-	width: 996px;
-	padding-bottom: 50px
+	width: 100%;
+	padding: 10px;
+	position: fixed;
+	top:80px;
+	z-index: 9997;
+		background: url('../images/bg-texture_image.jpg');
 }
 
+nav ul li:nth-child(1) {
+		margin-left: 150px;
+}
 nav li {
 	display: block;
 	float: left;
@@ -213,14 +230,13 @@ nav .current a {
 
 
 /*=========================Carousel=====================*/
-.css-carousel {
-	box-shadow: 1px 1px 10px black;
-}
+
 .css-carousel {
 	width: 100%;
 	height: 500px; /* Height of images */
 	position: relative;
 	overflow: hidden;
+	z-index: 9990;
 }
 
 .css-carousel .css-img {
@@ -358,11 +374,6 @@ label {
 	padding: 0;
 }
 
-#map {
-	margin: 10px 13px;
-	width: 970px;
-	overflow: hidden;
-}
 
 /*------------About---------------*/
 
@@ -403,18 +414,18 @@ footer {
 }
 
 .logo {
-	width: 100px;
+	width: 130px;
 	height: 100px;
 	box-shadow: none;
-	margin-left: 5px;
+	margin-left: 0px;
 }
 
 .logo img {
-	padding: 10px 10px;
+	padding: 5px 0px;
 }
 
 .title {
-	margin: 0 40px;
+	margin: 0 30px;
 }
 
 .socialmedia {
@@ -445,6 +456,9 @@ h2 {
 	width: 768px;
 }
 
+nav ul li:nth-child(1) {
+	margin-left: 10px;
+}
 .services {
 	margin-top: 20px;
 }
@@ -458,9 +472,6 @@ h2 {
 	margin-left: 250px;
 }
 
-#map {
-	width: 742px;
-}
 
 
 }
@@ -470,6 +481,42 @@ h2 {
 
 /* Mobile Landscape Size to Tablet Portrait */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+
+#header {
+	display: none;
+}
+
+.js #menu {
+		display:none;
+	}
+	
+	.js .slicknav_menu {
+		display:block;
+}
+.slicknav_btn {
+	margin-left: 25px;
+	margin-top: -50px;
+}
+.slicknav_nav {
+position: fixed;
+top:0;
+width: 100%;
+z-index: 9999;
+	background: url("../images/bg-texture_image.jpg");
+}
+
+.slicknav_nav a {
+	padding: 0;
+	height: 53px;
+	line-height: 53px;
+	font-size: 2em;
+	border-bottom: 1px solid black;	
+    font-family: Pacifico, arial;
+    color: black;
+    text-shadow: 2px 2px 1px white;
+    text-align: center;	
+}
+
 
 .login {
 	font-size: 1.2em;
@@ -481,7 +528,19 @@ h2 {
 	width: 480px;
 	height: 150px;
 }
+.logo {
+	width: 130px;
+	height: 100px;
+	background: url('../images/bg_text_texture.jpg');
+	box-shadow:none;
+	margin-left: 25px;
+	display: block;
+	float: left;
+}
 
+.logo img {
+	padding: 5px 0px;
+}
 .logo {
 	margin-left: 156px;
 }
@@ -492,23 +551,17 @@ h2 {
 
 .socialmedia {
 	position: absolute;
+	top:.7em;
 }
 
 .button {
 	margin: 15px 15px 5px 20px;		
 }
 
-.main-nav {
-	margin: 0;
-	width: 456px;
-	font-size: 14px;
-	clear: both;
-}
 
-nav li {
-	font-size: 1.3em;
-	padding-left: 15px;
-}
+.container {
+	margin-top: 50px;
+}	
 
 .feature {
 	height: 300px;
@@ -533,10 +586,6 @@ label {
 	margin: 0 auto;
 }
 
-#map {
-	margin: 0;
-	width: 454px;
-}
 
 .owner {
 	box-shadow: none;
@@ -547,10 +596,37 @@ label {
 
 /* Mobile Portrait Size to Mobile Landscape Size */
 @media only screen and (max-width: 479px) {
+
+.js #menu {
+		display:none;
+	}
 	
+	.js .slicknav_menu {
+		display:block;
+}
+
+.slicknav_btn {
+	margin-left: 10px;
+}
+.slicknav_menu {
+	position: fixed;
+	top: 10px;
+}
+.slicknav_nav a {
+	padding: 0;
+	height: 62px;
+	line-height: 62px;
+	font-size: 2em;
+	border-bottom: 1px solid black;	
+    font-family: Pacifico, arial;
+    color: black;
+    text-shadow: 2px 2px 1px white;
+    text-align: center;	
+}
+
 .login {
 	font-size: 1em;
-	width: 100px;
+	width: 90px;
 	margin-left: 10px;
 	border-radius: 5px 5px;
 }
@@ -571,31 +647,22 @@ label {
 .socialmedia {
 	position: absolute;
 	margin-left: -15px;
-}
-
-.main-nav {
-	margin: 0;
-	width: 320px;
-}
-
-nav li{
-	padding: 0;
-	height: 62px;
-	line-height: 62px;
-	font-size: 2em;
-	width: 300px;
-	border-bottom: 1px solid black;	
+	top:.7em
 }
 
 .button {
-	width: 100px;
+	width: 90px;
 	margin: 15px 0 5px 10px;
 	font-size: 14px;
 }
 
 .title {
 	display: none;	
-}		
+}	
+
+.container {
+	margin-top: 120px;
+}	
 	
 .feature {
 	height: 180px;
@@ -612,11 +679,6 @@ label {
 
 #submit {
 	margin: 0 auto;
-}
-
-#map {
-	margin: 0;
-	width: 294px;
 }
 
 .css-carousel {

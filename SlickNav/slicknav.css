@@ -5,7 +5,7 @@
 .slicknav_btn { position: fixed; display: block; top: 10px;right: 20px;padding: 0.45em 0.625em 0.45em 0.625em; line-height: 1.125em; cursor: pointer; z-index: 10000; }
 .slicknav_menu {
 	position: relative;
-	top: 50px;
+	top: 0px;
 }
 .slicknav_menu  .slicknav_menutxt { display: block; line-height: 1em; float: left; }
 .slicknav_menu .slicknav_icon { float: left; margin: 0.1em 0 0 0.438em; }

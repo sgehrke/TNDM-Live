@@ -586,7 +586,7 @@ label {
 }
 
 .slicknav_nav {
-position: fixed;
+position: relative;
 top:50px;
 width: 100%;
 z-index: 9999;

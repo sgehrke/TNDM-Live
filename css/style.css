@@ -483,7 +483,7 @@ nav ul li:nth-child(1) {
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
 #header {
-	height: 50px;
+	display: none;
 }
 
 .js #menu {
@@ -493,10 +493,15 @@ nav ul li:nth-child(1) {
 	.js .slicknav_menu {
 		display:block;
 }
-
+.slicknav_btn {
+	margin-left: 25px;
+	margin-top: -50px;
+}
 .slicknav_nav {
-	width: 100%;
-	z-index: 9999;
+position: fixed;
+top:0;
+width: 100%;
+z-index: 9999;
 	background: url("../images/bg-texture_image.jpg");
 }
 
@@ -514,11 +519,30 @@ nav ul li:nth-child(1) {
 
 
 .login {
-	display: none;
+	font-size: 1.2em;
+	width: 139px;
+	margin-left: 20px;
+	border-radius: 5px 5px;
+}
+.header-contain {
+	width: 480px;
+	height: 150px;
+}
+.logo {
+	width: 130px;
+	height: 100px;
+	background: url('../images/bg_text_texture.jpg');
+	box-shadow:none;
+	margin-left: 25px;
+	display: block;
+	float: left;
 }
 
+.logo img {
+	padding: 5px 0px;
+}
 .logo {
-	display: none;
+	margin-left: 156px;
 }
 
 .title {
@@ -526,17 +550,17 @@ nav ul li:nth-child(1) {
 }
 
 .socialmedia {
-	display: none;
-
+	position: absolute;
+	top:.7em;
 }
 
 .button {
-	margin: 10px 15px 5px 20px;		
+	margin: 15px 15px 5px 20px;		
 }
 
 
 .container {
-	margin-top: 70px;
+	margin-top: 50px;
 }	
 
 .feature {
@@ -573,10 +597,6 @@ label {
 /* Mobile Portrait Size to Mobile Landscape Size */
 @media only screen and (max-width: 479px) {
 
-#header {
-	height: 50px;
-}
-
 .js #menu {
 		display:none;
 	}
@@ -585,16 +605,17 @@ label {
 		display:block;
 }
 
-.slicknav_nav {
-	width: 100%;
-	z-index: 9999;
-	background: url("../images/bg-texture_image.jpg");
+.slicknav_btn {
+	margin-left: 10px;
 }
-
+.slicknav_menu {
+	position: fixed;
+	top: 10px;
+}
 .slicknav_nav a {
 	padding: 0;
-	height: 53px;
-	line-height: 53px;
+	height: 62px;
+	line-height: 62px;
 	font-size: 2em;
 	border-bottom: 1px solid black;	
     font-family: Pacifico, arial;
@@ -603,31 +624,44 @@ label {
     text-align: center;	
 }
 
-
 .login {
-	display: none;
+	font-size: 1em;
+	width: 90px;
+	margin-left: 10px;
+	border-radius: 5px 5px;
+}
+.header-contain {
+	width: 320px;
 }
 
 .logo {
-	display: none;
+	width: 100px;
+	height: 100px;
+	margin-left: 110px
 }
 
-.title {
-	display: none;
+.logo img {
+	padding: 10px 0;
 }
 
 .socialmedia {
-	display: none;
-
+	position: absolute;
+	margin-left: -15px;
+	top:.7em
 }
 
 .button {
-	margin: 10px 15px 5px 20px;		
+	width: 90px;
+	margin: 15px 0 5px 10px;
+	font-size: 14px;
 }
 
+.title {
+	display: none;	
+}	
 
 .container {
-	margin-top: 70px;
+	margin-top: 120px;
 }	
 	
 .feature {

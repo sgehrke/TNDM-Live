@@ -480,7 +480,7 @@ nav ul li:nth-child(1) {
 
 
 /* Mobile Landscape Size to Tablet Portrait */
-@media only screen and (min-width: 300px) and (max-width: 767px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
 
 #header {
 	display: none;
@@ -595,7 +595,7 @@ label {
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 479px) {
 
 .js #menu {
 		display:none;
@@ -680,6 +680,7 @@ label {
 #submit {
 	margin: 0 auto;
 }
+
 
 .css-carousel {
 	height: 180px; /* Height of images */

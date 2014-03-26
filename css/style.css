@@ -476,80 +476,11 @@ nav ul li:nth-child(1) {
 
 }
 /* All Mobile Sizes */
-@media only screen and (min-width 481px) and (max-width: 767px) {}
-.login {
-	font-size: 1em;
-	width: 90px;
-}
-
-.header-contain {
-	width: 768px;
-	height: 100px;
-}
-
-.logo {
-	width: 130px;
-	height: 100px;
-	box-shadow: none;
-	margin-left: 0px;
-}
-
-.logo img {
-	padding: 5px 0px;
-}
-
-.title {
-	margin: 0 30px;
-}
-
-.socialmedia {
-	width: 90px;
-	padding: 0;
-}
-
-.button {
-	width: 90px;
-	font-size: 14px;	
-}
-
-nav li {
-	font-size: 1.2em;
-}
-
-h2 {
-	font-size: 1.5em
-}
-
-.feature {
-	height: 500px;
-}
-
-.main-nav { 
-	padding-left: 0px;
-	margin-left: 0px;	
-	width: 768px;
-}
-
-nav ul li:nth-child(1) {
-	margin-left: 10px;
-}
-.services {
-	margin-top: 20px;
-}
-
-.owner {
-	box-shadow: none;
-	padding: 10px;
-}
-
-#submit {
-	margin-left: 250px;
-}
-
+@media only screen and (max-width: 767px) {}
 
 
 /* Mobile Landscape Size to Tablet Portrait */
-@media only screen and (min-width: 321px) and (max-width: 480px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
 
 #header {
 	display: none;
@@ -567,7 +498,7 @@ nav ul li:nth-child(1) {
 	margin-top: -50px;
 }
 .slicknav_nav {
-position: relative;
+position: fixed;
 top:0;
 width: 100%;
 z-index: 9999;
@@ -664,7 +595,7 @@ label {
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size */
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 479px) {
 
 .js #menu {
 		display:none;
@@ -749,7 +680,6 @@ label {
 #submit {
 	margin: 0 auto;
 }
-
 
 .css-carousel {
 	height: 180px; /* Height of images */

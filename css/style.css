@@ -483,8 +483,8 @@ nav ul li:nth-child(1) {
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
 #header {
-	display: none;
-}
+	height: 50px;
+	}
 
 .js #menu {
 		display:none;
@@ -493,13 +493,10 @@ nav ul li:nth-child(1) {
 	.js .slicknav_menu {
 		display:block;
 }
-.slicknav_btn {
-	margin-left: 25px;
-	margin-top: -50px;
-}
+
 .slicknav_nav {
 position: fixed;
-top:0;
+top:50px;
 width: 100%;
 z-index: 9999;
 	background: url("../images/bg-texture_image.jpg");
@@ -519,23 +516,14 @@ z-index: 9999;
 
 
 .login {
-	font-size: 1.2em;
-	width: 139px;
-	margin-left: 20px;
-	border-radius: 5px 5px;
+	display: none;	
 }
 .header-contain {
 	width: 480px;
 	height: 150px;
 }
 .logo {
-	width: 130px;
-	height: 100px;
-	background: url('../images/bg_text_texture.jpg');
-	box-shadow:none;
-	margin-left: 25px;
-	display: block;
-	float: left;
+	display: none;
 }
 
 .logo img {
@@ -550,17 +538,18 @@ z-index: 9999;
 }
 
 .socialmedia {
-	position: absolute;
-	top:.7em;
+	display: none;
 }
 
 .button {
-	margin: 15px 15px 5px 20px;		
+	position: fixed;
+	top:0;
+	margin: 10px 15px 5px 20px;		
 }
 
 
 .container {
-	margin-top: 50px;
+	margin-top: 70px;
 }	
 
 .feature {

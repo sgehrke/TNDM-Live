@@ -575,7 +575,11 @@ label {
 #header {
 	height: 50px;
 	position: absolute;
-	}
+}
+
+h2 {
+	font-size: 1.8em;
+}
 
 .js #menu {
 		display:none;

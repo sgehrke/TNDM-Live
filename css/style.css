@@ -484,6 +484,7 @@ nav ul li:nth-child(1) {
 
 #header {
 	height: 50px;
+	position: absolute;
 	}
 
 .js #menu {
@@ -495,8 +496,6 @@ nav ul li:nth-child(1) {
 }
 
 .slicknav_nav {
-position: fixed;
-top:50px;
 width: 100%;
 z-index: 9999;
 	background: url("../images/bg-texture_image.jpg");
@@ -575,6 +574,7 @@ label {
 
 #header {
 	height: 50px;
+	position: absolute;
 	}
 
 .js #menu {

@@ -14,7 +14,8 @@
 	<meta name="author" content="Shaun Gehrke">
 
 	<meta name="viewport" content="width=device-width">
-
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/grid.css">
@@ -22,104 +23,154 @@
 	<script src="js/jquery-1.11.0.min.js"></script>	
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<link rel="stylesheet" href="SlickNav/slicknav.css" />
-<script src="SlickNav/jquery.slicknav.min.js"></script>
-	
+	<script src="SlickNav/jquery.slicknav.min.js"></script>
+	<script src="js/scripts.js"></script>
 	
 </head>
 
 <body>
 	
 	<header>
-		<div id="header">	
-			<div class="header-contain">
-				<div class="logo"><a href="index.html"><img  src="images/viewlogo.png" alt="logo" /></a></div>		
-				<h1 class="title">The New Dance Machine</h1>
-				<ul class="socialmedia">
-					<li><a href="https://twitter.com/TNDM_DJservice"><img width="48" height="48" src="images/Twitter_Icon.png" alt="titter icon" /></a></li>
-					<li><a href="https://www.facebook.com/pages/The-New-Dance-Machine/177951172234999"><img width="48" height="48" src="images/facebook_icon.png" alt="facebook icon" /></a></li>
-					<li><a href="http://www.pinterest.com/djshauntndm/"><img width="48" height="48" src="images/pinterest-icon.png" alt="pinterest icon" /></a></li>		
-				</ul>
-				<a class="button" href="http://www.thenewdancemachine.djintelligence.com/quote/index.asp?Month=&Day=&Year=&ID=Weddings&Source=">Instant Quote</a>
-				<!-- Start Client Area Code -->
-					<script language="JavaScript">
-					function intclient()
-					{
-					detailsWindow = window.open("http://www.thenewdancemachine.djintelligence.com/client","intclient","width=675,height=575,resizable=no,toolbar=no,menubar=no,location=no,scrollbars=yes");
-					detailsWindow.focus()
-					 }
-					</script>
-					<a class="login" href="http://www.thenewdancemachine.djintelligence.com/client">Client Login</a>
-					<!-- End Client Area Code -->
-			</div><!-- .header-contain -->
-		</div><!-- #header -->
-		
+	<div>
+		<h1><a href="index.html"><img src="images/viewlogo.png" alt="TNDM Logo: character listening to headphones" /></a></h1>	
+		<h1>The New Dance Machine</h1>
+		<nav class="off-canvas-wrap">
+			<ul id="menu" class="main-nav">
+				<li><a href="about.html">About</a></li>
+				<li ><a href="sound.html">Sound</a></li>
+				<li><a href="packages.html">Packages</a></li>
+				<li class="current"><a href="testimonials.html">Reviews</a></li>
+				<li><a href="mailto:djshaun@thenewdancemachine.com?Subject=DJ%20Inquiry">Contact us</a></li>
+				<li><a class="login" id="login-trigger" href="#">Sign In</a></li>
+		<form id="login-content" method="POST" action="http://www.thenewdancemachine.djintelligence.com/client/index.asp">
+			<p>
+				<label>Wedding Date:</label>
+				<select name="Month">
+					<option value="0">Month</option>
+					<option value="1">January</option>
+					<option value="2">February</option>
+					<option value="3">March</option>
+					<option value="4">April</option>
+					<option value="5">May</option>
+					<option value="6">June</option>
+					<option value="7">July</option>
+					<option value="8">August</option>
+					<option value="9">September</option>
+					<option value="10">October</option>
+					<option value="11">November</option>
+					<option value="12">December</option>
+				</select>
+				<select name="Day">
+					<option value="0">Day</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+					<option>11</option>
+					<option>12</option>
+					<option>13</option>
+					<option>14</option>
+					<option>15</option>
+					<option>16</option>
+					<option>17</option>
+					<option>18</option>
+					<option>19</option>
+					<option>20</option>
+					<option>21</option>
+					<option>22</option>
+					<option>23</option>
+					<option>24</option>
+					<option>25</option>
+					<option>26</option>
+					<option>27</option>
+					<option>28</option>
+					<option>29</option>
+					<option>30</option>
+					<option>31</option>
+				</select>
+				<select name="Year">
+					<option value="0">Year</option>
+					<option>2014</option>
+					<option>2015</option>
+					<option>2016</option>
+					<option>2017</option>
+					<option>2018</option>
+				</select>
+			</p>
+			<p>
+				<label>Password:</label>
+				<input type="password" maxlength="10" name="Password">
+			</p>
+				<input type="submit" value="submit">
+		</form>  
+		</nav>			
+	</div>
 	</header>
-		<div class="container"><!-- Main container -->
-			<nav>
-				<ul id="menu" class="main-nav">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li ><a href="sound.html">Sound</a></li>
-					<li><a href="packages.html">Packages</a></li>
-					<li class="current"><a href="testimonials.html">Reviews</a></li>
-					<li><a href="contact_us.html">Contact us</a></li>
-				</ul>
-		    </nav>
-    
-    
-    <div><h2>Testimonials</h2>
-    </div>
-
-    
-    <section class="grid_12">
-    			<h3>Hertzberg Wedding</h3>
-		<div class="grid_3 alpha">
-			
-			<img width="416" height="683" src="images/testimonials_hertzberg.jpg" alt="hertzberg wedding" />
-		</div>
-    		<p>"The time and effort that you put into making our wedding day special is much appreciated.  You truly went above and beyond with your services, from setting up two nights before and doing lighting checks, to setting up an extra speaker in the back of the house during the cocktail hour, and doing such professional announcements to get families and friends where they needed to be for group pictures.  You also went above and beyond by making some special music mixes on our request.  Thank you for being willing to play a little longer...I can't believe so many people were still on the dance floor when we left at 12:30 AM!  Thank you so much for doing an excellent job at our wedding!  It was the best weekend of my life and you were a part of making it so wonderful!  You were great to work with and I will highly recommend you to my family and friends!"</p>
-    </section>
-    
-    <section class="grid_12">
-    	<h3>Johnston Wedding</h3>
-		<div class="grid_3 alpha">
-		<img width="416" height="556" src="images/testimonials_johnston.jpg" alt="johnston wedding" />
-		</div>
-    		<p>"This DJ has the best equipment and is very classy. The event director at the reception said this was the only DJ who actually came in and inspected the room for compliance and set up before an event setup. We were very impressed, the rates are the best we found and the service was above all expectations. I have been to too many weddings were the DJ did not play music the crowd was liking. 
-				The New Dance Machine had the dance floor packed until the very last minute!
-				I would highly recommend their services" </p>
-    </section>
-   
-    <section class="grid_12">
-    	<h3>Wimberley Wedding</h3>
-		<div class="grid_3 alpha"><img width="416" height="328" src="images/testimonials_wimberly.jpg" alt="wimberley wedding" /></div>
-    	<p>"We had DJ Shaun for our wedding and he was AMAZING! The energy on the dance floor was crazy. Many guests commented on how wonderful a job he did, and the up-lighting was beautiful"</p>
-    
-    </section>
-    
-    <section class="grid_12">
-    	<h3>Ducat Wedding</h3>
-		<div class="grid_3 alpha"><img width="416" height="485" src="images/testimonials_ducat.jpg" alt="ducat wedding" /></div>
-    	<p>I was very pleased with all your services! I like that you took the time to sit down and figure everything out with me so we had everything we wanted and you knew what was going on with the day. I also loved the fact that you cared about my day instead of just showing up and playing. You talked to Beibels (caterer) to figure that out and you made mixes for me and helped put together the kissing game! Well I don't want to give you a big head!! But thought you were great!</p>
-    
-    </section>
-    
-    <section class="grid_12 alpha">
-    	<h2>Committed to your satisfaction</h2>
-    
-    	<p class="grid_12 omega">The New Dance Machine is committed to your satisfaction.  These testimonials are one way for us to show you our ability to give a quality show that is tailored to every event. Satisfaction of our customers is a top priority, without it we wouldn't be in business. </p>
-    
-    </section>
+	<div class="container">
+	    <div>
+		    <h2>Testimonials</h2>
+	    </div>
 	
-</div><!-- container -->
-	
-	<footer><p>Copyright &copy; The New Dance Machine DJ service 2014</p>
-	</footer>
-
+	    
+	    <section class="grid_12">
+	    			<h3>Hertzberg Wedding</h3>
+			<div class="grid_3 alpha">
+				
+				<img width="416" height="683" src="images/testimonials_hertzberg.jpg" alt="hertzberg wedding" />
+			</div>
+	    		<p>"The time and effort that you put into making our wedding day special is much appreciated.  You truly went above and beyond with your services, from setting up two nights before and doing lighting checks, to setting up an extra speaker in the back of the house during the cocktail hour, and doing such professional announcements to get families and friends where they needed to be for group pictures.  You also went above and beyond by making some special music mixes on our request.  Thank you for being willing to play a little longer...I can't believe so many people were still on the dance floor when we left at 12:30 AM!  Thank you so much for doing an excellent job at our wedding!  It was the best weekend of my life and you were a part of making it so wonderful!  You were great to work with and I will highly recommend you to my family and friends!"</p>
+	    </section>
+	    
+	    <section class="grid_12">
+	    	<h3>Johnston Wedding</h3>
+			<div class="grid_3 alpha">
+			<img width="416" height="556" src="images/testimonials_johnston.jpg" alt="johnston wedding" />
+			</div>
+	    		<p>"This DJ has the best equipment and is very classy. The event director at the reception said this was the only DJ who actually came in and inspected the room for compliance and set up before an event setup. We were very impressed, the rates are the best we found and the service was above all expectations. I have been to too many weddings were the DJ did not play music the crowd was liking. 
+					The New Dance Machine had the dance floor packed until the very last minute!
+					I would highly recommend their services" </p>
+	    </section>
+	   
+	    <section class="grid_12">
+	    	<h3>Wimberley Wedding</h3>
+			<div class="grid_3 alpha"><img width="416" height="328" src="images/testimonials_wimberly.jpg" alt="wimberley wedding" /></div>
+	    	<p>"We had DJ Shaun for our wedding and he was AMAZING! The energy on the dance floor was crazy. Many guests commented on how wonderful a job he did, and the up-lighting was beautiful"</p>
+	    
+	    </section>
+	    
+	    <section class="grid_12">
+	    	<h3>Ducat Wedding</h3>
+			<div class="grid_3 alpha"><img width="416" height="485" src="images/testimonials_ducat.jpg" alt="ducat wedding" /></div>
+	    	<p>I was very pleased with all your services! I like that you took the time to sit down and figure everything out with me so we had everything we wanted and you knew what was going on with the day. I also loved the fact that you cared about my day instead of just showing up and playing. You talked to Beibels (caterer) to figure that out and you made mixes for me and helped put together the kissing game! Well I don't want to give you a big head!! But thought you were great!</p>
+	    
+	    </section>
+	    
+	    <section class="grid_12 alpha">
+	    	<h2>Committed to your satisfaction</h2>
+	    
+	    	<p class="grid_12 omega">The New Dance Machine is committed to your satisfaction.  These testimonials are one way for us to show you our ability to give a quality show that is tailored to every event. Satisfaction of our customers is a top priority, without it we wouldn't be in business. </p>
+	    
+	    </section>
+		
+	</div><!-- container -->
+		
+	<footer>		
+		<ul>
+			<li><a href="https://twitter.com/TNDM_DJservice">Twitter</a></li>
+			<li><a href="https://www.facebook.com/pages/The-New-Dance-Machine/177951172234999">Facebook</a></li>
+			<li><a href="http://www.pinterest.com/djshauntndm/">Pinterest</a></li>		
+		</ul>
+	</footer>	
 	<script>
 	$(function(){
 		$('#menu').slicknav();
 	});
-</script>
+	</script>
 </body>
-</html>
+</html> 

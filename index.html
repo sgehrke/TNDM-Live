@@ -23,61 +23,108 @@
 	<script src="js/jquery-1.11.0.min.js"></script>	
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<link rel="stylesheet" href="SlickNav/slicknav.css" />
-<script src="SlickNav/jquery.slicknav.min.js"></script>
+	<script src="SlickNav/jquery.slicknav.min.js"></script>
+	<script src="js/scripts.js"></script>
 	
 </head>
 
 <body>
 	
 	<header>
-		<div id="header">	
-			<div class="header-contain">
-				<div class="logo"><a href="index.html"><img  src="images/viewlogo.png" alt="logo" /></a></div>		
-				<h1 class="title">The New Dance Machine</h1>
-				<ul class="socialmedia">
-					<li><a href="https://twitter.com/TNDM_DJservice"><img width="48" height="48" src="images/Twitter_Icon.png" alt="titter icon" /></a></li>
-					<li><a href="https://www.facebook.com/pages/The-New-Dance-Machine/177951172234999"><img width="48" height="48" src="images/facebook_icon.png" alt="facebook icon" /></a></li>
-					<li><a href="http://www.pinterest.com/djshauntndm/"><img width="48" height="48" src="images/pinterest-icon.png" alt="pinterest icon" /></a></li>		
-				</ul>
-				<a class="button" href="http://www.thenewdancemachine.djintelligence.com/quote/index.asp?Month=&Day=&Year=&ID=Weddings&Source=">Instant Quote</a>
-				<!-- Start Client Area Code -->
-					<script language="JavaScript">
-					function intclient()
-					{
-					detailsWindow = window.open("http://www.thenewdancemachine.djintelligence.com/client","intclient","width=675,height=575,resizable=no,toolbar=no,menubar=no,location=no,scrollbars=yes");
-					detailsWindow.focus()
-					 }
-					</script>
-					<a class="login" href="http://www.thenewdancemachine.djintelligence.com/client">Client Login</a>
-					<!-- End Client Area Code -->
-			</div><!-- .header-contain -->
-		</div><!-- #header -->
-		
+	<div>
+		<h1><a href="index.html"><img src="images/viewlogo.png" alt="TNDM Logo: character listening to headphones" /></a></h1>	
+		<h1>The New Dance Machine</h1>
+		<nav class="off-canvas-wrap">
+			<ul id="menu" class="main-nav">
+				<li><a href="about.html">About</a></li>
+				<li ><a href="sound.html">Sound</a></li>
+				<li><a href="packages.html">Packages</a></li>
+				<li><a href="testimonials.html">Reviews</a></li>
+				<li><a href="mailto:djshaun@thenewdancemachine.com?Subject=DJ%20Inquiry">Contact us</a></li>
+				<li><a class="login" id="login-trigger" href="#">Sign In</a></li>
+		<form id="login-content" method="POST" action="http://www.thenewdancemachine.djintelligence.com/client/index.asp">
+			<p>
+				<label>Wedding Date:</label>
+				<select name="Month">
+					<option value="0">Month</option>
+					<option value="1">January</option>
+					<option value="2">February</option>
+					<option value="3">March</option>
+					<option value="4">April</option>
+					<option value="5">May</option>
+					<option value="6">June</option>
+					<option value="7">July</option>
+					<option value="8">August</option>
+					<option value="9">September</option>
+					<option value="10">October</option>
+					<option value="11">November</option>
+					<option value="12">December</option>
+				</select>
+				<select name="Day">
+					<option value="0">Day</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+					<option>11</option>
+					<option>12</option>
+					<option>13</option>
+					<option>14</option>
+					<option>15</option>
+					<option>16</option>
+					<option>17</option>
+					<option>18</option>
+					<option>19</option>
+					<option>20</option>
+					<option>21</option>
+					<option>22</option>
+					<option>23</option>
+					<option>24</option>
+					<option>25</option>
+					<option>26</option>
+					<option>27</option>
+					<option>28</option>
+					<option>29</option>
+					<option>30</option>
+					<option>31</option>
+				</select>
+				<select name="Year">
+					<option value="0">Year</option>
+					<option>2014</option>
+					<option>2015</option>
+					<option>2016</option>
+					<option>2017</option>
+					<option>2018</option>
+				</select>
+			</p>
+			<p>
+				<label>Password:</label>
+				<input type="password" maxlength="10" name="Password">
+			</p>
+				<input type="submit" value="submit">
+		</form>  
+		</nav>			
+	</div>
 	</header>
-		<div class="container"><!-- Main container -->
-			<div class="off-canvas-wrap">
-			<nav>
-				<ul id="menu" class="main-nav">
-					<li class="home"><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li ><a href="sound.html">Sound</a></li>
-					<li><a href="packages.html">Packages</a></li>
-					<li><a href="testimonials.html">Reviews</a></li>
-					<li><a href="contact_us.html">Contact us</a></li>
-				</ul>
-</div>		    </nav>
-
-		<div class="css-carousel">
-			<img class="css-img" <img src="images/CSS.DeNoble_Garter.jpg" alt="_CSS.DeNoble_Garter" width="100%" height="100%"/>
-			<img class="css-img" <img src="images/CSS.Sanchack_FirstDance.jpg" alt="_CSS.Sanchack_FirstDance" width="100%" height="100%"/>			
-			<img class="css-img" <img src="images/CSS.Worzalla_Dancing.jpg" alt="_CSS.Worzalla_Dancing" width="100%" height="100%"/>
-			<img class="css-img" <img src="images/home_Zuege_father_dance.jpg" alt="home_Zuege_father_dance" width="100%" height="100%"/>
-			<img class="css-img" <img src="images/home_joski_garter3.jpg" alt="home_joski_garter3" width="100%" height="100%"/>
-			<img class="css-img" <img src="images/home_Zuege_ymca.jpg" alt="home_Zuege_ymca" width="100%" height="100%">		
-		</div><!-- end carousel -->
+	
+		<section class="feature-image">
+			<div class="home-header">
+				<div class="main-CTA">
+					<h2>More than just your DJ!</h2>
+					<a class="button" href="http://www.thenewdancemachine.djintelligence.com/quote/index.asp?Month=&Day=&Year=&ID=Weddings&Source=">Instant Quote</a>
+					<h2>(920)819-8098</h2>	
+				</div>
+			</div>
+		</section><!-- end carousel -->
 		
-    <div class="main_content">
-	    <section class="grid_4">
+	<section class="container main_content"><!-- Main container -->
+	    <section class="grid_4 ">
 	    	<h2>Success Stories</h2>
 	    	<p>Part of being a professional Wedding DJ service means taking the time to listen to your clients. Through our success stories you will see that is exactly what we do here at TNDM Green Bay DJ service. We take the time to understand just what the client is looking for, and do all we can to make that happen. Please read what people are saying about our service on the testimonials page.</p>
 	    	<img class="stories" src="images/TNDM_Setup.jpg" alt="dancing" /> 
@@ -89,40 +136,24 @@
 		</section>
 		<section class="grid_4">
 			<h2>Our Services</h2>
-				<p>The New Dance Machine offers several different types of DJ services. From spinning the ones and twos at school dances, to transforming wedding venues with our beautiful up-lighting. Our Wedding DJ's are experienced, professional, and set the standard for Green Bay DJ's. Feel free to explore the site, email, or give us a call for more information.</p>
+				<p>The New Dance Machine offers several different types of DJ services. From spinning the ones and twos at school dances, to transforming wedding venues with our beautiful up-lighting. Our Wedding DJ's are experienced, professional, and set the standard for Green Bay DJ's. Feel free to explore the site, email, or give us a call for more information. <a href="about.html"> Read More</a></p>
 				<img class="services" src="images/Franzke_wedding_setup.jpg" alt="couple dancing" /> 
 				
-		</section></div>	
+		</section>	
 	
-	</div><!-- End Main-container -->
-
+	</section><!-- End Main-container -->
 	
-	<footer>
-		
-		<!-- ADDING THE SOCIAL ICONS TO THE FOOTER WAS ONLY DONE AS A TEST FOR GITHUB CNAME CHANGE -->
-		
-		
-		<ul class="socialmedia">
-			<li><a href="https://twitter.com/TNDM_DJservice"><img width="48" height="48" src="images/Twitter_Icon.png" alt="titter icon" /></a></li>
-			<li><a href="https://www.facebook.com/pages/The-New-Dance-Machine/177951172234999"><img width="48" height="48" src="images/facebook_icon.png" alt="facebook icon" /></a></li>
-			<li><a href="http://www.pinterest.com/djshauntndm/"><img width="48" height="48" src="images/pinterest-icon.png" alt="pinterest icon" /></a></li>		
+	<footer>		
+		<ul>
+			<li><a href="https://twitter.com/TNDM_DJservice">Twitter</a></li>
+			<li><a href="https://www.facebook.com/pages/The-New-Dance-Machine/177951172234999">Facebook</a></li>
+			<li><a href="http://www.pinterest.com/djshauntndm/">Pinterest</a></li>	
 		</ul>
-		<p>Copyright &copy; The New Dance Machine DJ service 2014</p>
 	</footer>	
 	<script>
 	$(function(){
 		$('#menu').slicknav();
 	});
 	</script>
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	
-	  ga('create', 'UA-54662718-1', 'auto');
-	  ga('send', 'pageview');
-
-  </script>
 </body>
 </html> 

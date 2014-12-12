@@ -411,29 +411,30 @@ footer ul {
 }
 
 footer li {
-	margin: 0 auto;
 	display: inline-block;
-	padding: 0;
+}
+
+footer li a{
+	display: inline-block;
 	width: 50px;
-	list-style: none;
-	text-align: center;
- 	text-indent: -90em;
+
 }
-footer li:nth-child(1) {
+#twitter {
 	background: url(../images/Twitter_Icon.png)no-repeat center;
+	text-indent: -9999px;
+	
 }
 
-footer li:nth-child(2) {
+#facebook {
 	background: url(../images/facebook_icon.png)no-repeat center;
+	text-indent: -9999px;
+
 }
 
-footer li:nth-child(3) {
+#pinterest {
 	background: url(../images/pinterest-icon.png)no-repeat center;
-}
+	text-indent: -9999px;
 
-
-footer li a {
-	margin: 0 auto;
 }
 
 footer li:hover {
@@ -552,7 +553,12 @@ footer li:hover {
 
 /* Mobile Landscape Size to Tablet Portrait */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-	
+
+	header h1:nth-of-type(2) {	
+		margin: 0 88px;
+		height: 1px;
+		text-indent: -9999px;	
+	}	
 	.feature-image {
 		height: 300px; /* Height of images */
 	}
@@ -608,16 +614,16 @@ footer li:hover {
 		line-height: 53px;
 		font-size: 2em;
 		border-bottom: 1px solid black;	
-	    font-family: myriad pro, arial;
+	    font-family: helvetica, arial;
 	    color: black;
 	    text-shadow: 2px 2px 1px white;
 	    text-align: center;	
 	}
 	
-	
-	.login {
-		display: none;	
+	.slicknav_nav a.login{
+		display: none;
 	}
+	
 	
 	.title {
 		display: none;
@@ -672,12 +678,12 @@ footer li:hover {
 	}
 	
 	header h1:nth-of-type(1) {
-		width: 70px;
+		width: 80px;
 		height: 50px;
 		box-shadow: none;
 		margin: 0 auto;
 		position: relative;
-		font-size: 1em;
+		font-size: .5em;
 	}
 
 	.main-CTA {
@@ -700,14 +706,19 @@ footer li:hover {
 }
 /* Mobile Portrait Size to Mobile Landscape Size */
 @media only screen and (max-width: 479px) {
-	
+
+	header h1:nth-of-type(2) {	
+		margin: 0 88px;
+		height: 1px;
+		text-indent: -9999px;	
+	}	
 	header h1:nth-of-type(1) {
-		width: 70px;
+		width: 80px;
 		height: 50px;
 		box-shadow: none;
 		margin: 0 auto;
 		position: relative;
-		font-size: 1em;
+		font-size: .5em;
 	}
 	
 	.feature-image {
@@ -764,11 +775,17 @@ footer li:hover {
 		line-height: 53px;
 		font-size: 2em;
 		border-bottom: 1px solid black;	
-	    font-family: myriad pro, arial;
+	    font-family: helvetica, arial;
 	    color: black;
 	    text-shadow: 2px 2px 1px white;
 	    text-align: center;	
 	}
+	
+	.slicknav_nav a.login{
+		display: none;
+	}
+	
+	
 	
 	.login {
 		display: none;	

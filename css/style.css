@@ -281,7 +281,6 @@ nav ul li:nth-child(6) {
 	top: 100px;
 	background: url(../images/CSS.DeNoble_Garter_wide-overlay.jpg) no-repeat center center;
 	background-size: cover;
-					border: 1px solid blue;
 }
 
 .feature-about {
@@ -449,7 +448,7 @@ footer li:hover {
    ========================================================================== */
 
 /* Tablet Portrait size to Base 996px */
-@media only screen and (min-width: 766px) and (max-width: 996px) {
+@media only screen and (min-width: 768px) and (max-width: 996px) {
 	
 	.feature-image {
 		height: 400px; /* Height of images */
@@ -457,7 +456,6 @@ footer li:hover {
 	
 	.home-header {
 		height: 400px; /* Height of images */
-				border: 1px solid green;
 	}
 	
 	.feature-about {
@@ -476,6 +474,7 @@ footer li:hover {
 	header > div {
 		width: 768px;
 		height: 100px;
+		border: 1px solid red;
 	}
 	
 	header h1:nth-of-type(1) {
@@ -554,7 +553,7 @@ footer li:hover {
 
 
 /* Mobile Landscape Size to Tablet Portrait */
-@media only screen and (min-width: 480px) and (max-width: 765px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
 
 	header h1:nth-of-type(2) {	
 		margin: 0 88px;
@@ -568,7 +567,6 @@ footer li:hover {
 	.home-header {
 		height: 300px; /* Height of images */
 		top:50px;
-				border: 1px solid red;
 	}
 	
 	.feature-about {

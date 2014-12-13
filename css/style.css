@@ -474,7 +474,6 @@ footer li:hover {
 	header > div {
 		width: 768px;
 		height: 100px;
-		border: 1px solid red;
 	}
 	
 	header h1:nth-of-type(1) {
@@ -503,11 +502,11 @@ footer li:hover {
 	.main-nav { 
 		padding-left: 0px;
 		margin-left: 0px;	
-		width: 768px;
+		width: 750px;
 	}
 	
 	nav ul li:nth-child(1) {
-			margin-left: 145px;
+			margin-left: 135px;
 	}
 	
 	.services {

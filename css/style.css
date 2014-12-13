@@ -448,7 +448,7 @@ footer li:hover {
    ========================================================================== */
 
 /* Tablet Portrait size to Base 996px */
-@media only screen and (min-width: 768px) and (max-width: 996px) {
+@media only screen and (min-width: 768px) and (max-width: 997px) {
 	
 	.feature-image {
 		height: 400px; /* Height of images */

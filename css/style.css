@@ -29,13 +29,13 @@ h1 {
 
 
 h1, h2, h3, .login{
-    font-family: myriad pro, arial;
+    font-family: helvetica, arial;
 	text-shadow: 1px 1px 1px white;
 	margin: 0;
 }
 
 h2 {
-	font-size: 2.5em;
+	font-size: 2.4em;
 	text-align: center;
 	padding-top:20px;
 }
@@ -47,7 +47,7 @@ h3 {
 }
 
 p {
-	font-family: oriya MN, arial;
+	font-family: helvetica, arial;
 	padding: 10px 10px 20px 10px;
 	margin: 0 auto;
 	text-align: justify;
@@ -126,7 +126,7 @@ input[type=submit] {
 	margin-right:75px;
 	padding: 10px;
 	border: none;
-	font-family: myriad pro;
+	font-family: helvetica;
 	background-color: #6b6969;
 	border-radius: 5px;
 	color: white;
@@ -136,7 +136,7 @@ input[type=submit] {
 /*-------------------CTA---------------*/
 .button {
 	background:rgba(255, 133, 0, .15);
-	font-family: myriad pro;
+	font-family: helvetica;
     border-radius: 5px;
     border: 3px solid #ff7800;
 	font-size: 40px;
@@ -187,7 +187,7 @@ a.button:active {
 
 .main-CTA > h2 {
 	padding-bottom: 10px;
-	font-size: 4em;
+	font-size: 3.65em;
 	text-shadow: 1px 1px black;
 }
 
@@ -208,8 +208,8 @@ nav li {
 	display: block;
 	float: left;
 	line-height: 50px;
-	font-family: myriad pro, arial;
-	font-size: 1.5em;
+	font-family: helvetica, arial;
+	font-size: 1.3em;
 	text-align: center;
 	padding: 0 23.5px;
 	text-shadow: 1px 2px white;
@@ -248,7 +248,7 @@ nav .current a {
 }
 
 .login {
-	font-family: myriad pro;
+	font-family: helvetica;
 	background-color: #6b6969;
 	width: 132px;
 	border-radius: 5px;
@@ -484,7 +484,7 @@ footer li:hover {
 	
 	
 	nav li {
-		font-size: 1.2em;
+		font-size: 1em;
 		border-right: 2px solid black;	
 		display: block;
 		float: left;
@@ -542,7 +542,7 @@ footer li:hover {
 	}
 
 	.main-CTA > h2 {
-		font-size: 3em;
+		font-size: 2.7em;
 	}
 	footer ul {
 	width: 768px;
@@ -618,6 +618,7 @@ footer li:hover {
 	    color: black;
 	    text-shadow: 2px 2px 1px white;
 	    text-align: center;	
+	    text-decoration: none;
 	}
 	
 	.slicknav_nav a.login{
@@ -692,7 +693,7 @@ footer li:hover {
 	}
 
 	.main-CTA > h2 {
-		font-size: 2em;
+		font-size: 1.8em;
 		padding: 0;
 	}
 
@@ -779,6 +780,7 @@ footer li:hover {
 	    color: black;
 	    text-shadow: 2px 2px 1px white;
 	    text-align: center;	
+	    text-decoration: none;
 	}
 	
 	.slicknav_nav a.login{
@@ -818,7 +820,7 @@ footer li:hover {
 	}
 
 	.main-CTA > h2 {
-		font-size: 1.5em;
+		font-size: 1.4em;
 		padding: 0;
 	}
 

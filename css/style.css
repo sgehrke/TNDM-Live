@@ -108,6 +108,10 @@ section ul: {
 	float: left;
 }
 
+#login-content {
+	display: none;
+}
+
 /********************* LOGIN *******************/
 
 header form {

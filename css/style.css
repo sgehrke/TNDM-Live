@@ -813,6 +813,11 @@ footer li:hover {
 		margin: 0 auto;
 	}
 	
+	section > video {
+		width: 260px;
+		height: 200px;
+	}
+	
 	footer ul {
 		width: 320px;
 	}
@@ -832,6 +837,10 @@ footer li:hover {
 		font-size: 20px;
 		padding: 5px;
 		float: none;
+	}
+	
+	footer ul {
+		width: 320px;
 	}
 	 
 }

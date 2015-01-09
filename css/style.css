@@ -5,7 +5,10 @@ Copyright 2013, Josh Cope
 
 /* ===============Site Styles=============================== */
 
-
+.center div img {
+	float: left;
+	padding: 1% 0;
+}
 
 
 

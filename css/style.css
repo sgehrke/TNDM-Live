@@ -11,7 +11,6 @@ Copyright 2013, Josh Cope
 }
 
 
-
 /* NEED TO CHANGE THE HOVER EVENT OF THE TEXT TURNING WHITE....ALSO CHANGE THE SIZE OF THE NAV BUTTONS ON HOVER. */
 
 
@@ -24,7 +23,7 @@ html, body {
 body {
 	background: 
 		url("../images/bg-texture_image.jpg"),
-			url("../images/bg_text_texture.jpg")	
+			url("../images/bg_text_texture.jpg");	
 }
 h1 {
 	font-size: 4em;
@@ -41,9 +40,15 @@ h2 {
 	font-size: 2.4em;
 	text-align: center;
 	padding-top:20px;
+	font-weight: bold;
+	line-height: 125%;
+	letter-spacing: -1px;
+	color: #606060;
 }
 
+
 h3 {
+	color: #606060;
 	font-size: 2em;
 	padding-top: 30px;
 	text-align: center;
@@ -111,8 +116,41 @@ section ul: {
 	float: left;
 }
 
+.modal-box {
+	position: relative;
+} 
+
 #login-content {
 	display: none;
+}
+
+
+#login-content {
+	position: relative;
+	background: white;
+}
+#login-content:after, #login-content:before {
+	bottom: 100%;
+	right: 16%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+#login-content:after {
+	border-color: rgba(0, 0, 0, 0);
+
+	border-bottom-color: white;
+	border-width: 8px;
+	margin-left: -8px;
+}
+#login-content:before {
+	border-bottom-color: black;
+	border-width: 8.9px;
+	margin-left: -8.9px;
 }
 
 /********************* LOGIN *******************/
@@ -130,7 +168,6 @@ header form {
 }
 
 input[type=submit] {
-	margin-right:75px;
 	padding: 10px;
 	border: none;
 	font-family: helvetica;
@@ -139,6 +176,26 @@ input[type=submit] {
 	color: white;
 
 }
+
+    #login-content p label
+    {
+        display: block;
+        width: 150px;
+        float: left;
+        margin-bottom: 10px;
+    }
+        #login-content p input
+    {
+        display: block;
+        width: 220px;
+        float: left;
+        margin-bottom: 10px;
+    }
+
+	#login-content input[type=submit] {
+		width: 225px;
+		margin-right: 45px;
+	}
 
 /*-------------------CTA---------------*/
 .button {
@@ -196,6 +253,7 @@ a.button:active {
 	padding-bottom: 10px;
 	font-size: 3.65em;
 	text-shadow: 1px 1px black;
+	color: white;
 }
 
 /*--------------NAV----------------------------*/
@@ -256,17 +314,20 @@ nav .current a {
 
 .login {
 	font-family: helvetica;
-	background-color: #6b6969;
 	width: 132px;
 	border-radius: 5px;
 	float: left;
 	text-align: center;
 	text-shadow: none;
 	text-decoration: none;
+	background: #6b6969;
+	font-family: helvetica;
+	transition: all 0.3s ease 0s;
 }
 
 .login:hover {
-	background: #a0a0a0;
+	background: #ff7800;
+	text-shadow: none;
 
 }
 
@@ -342,14 +403,6 @@ section>p:only-child {
 	margin: 10px 0 20px 0;
 }
 
-label {
-	text-align: right;
-}
-
-#label1 {
-	text-align: left;
-}
-
 .form {
 	padding: 5px 0;
 }
@@ -399,33 +452,44 @@ box-shadow: 2px 2px 10px black;
 
 /*-----------------------FOOTER--------------*/
 
+
 footer {
 	margin: 0 auto;
 	overflow: hidden;
 	clear: both;
 	width: 100%;
 	height: 100px;
-	line-height: 100px;
 	background: url('../images/bg_text_texture.jpg');
 	text-align: center;	
 }
 
-footer ul {
+footer div {
 	width: 996px;
 	margin: 0 auto;
-	overflow: hidden;
-	padding: 0;
 }
+
+
+footer ul {
+	float: left;
+	width: 500px;
+	margin-top: 0;
+	margin-left: 20.5%;
+	line-height: 100px;
+}
+
 
 footer li {
 	display: inline-block;
+	vertical-align: middle;
 }
 
 footer li a{
-	display: inline-block;
+	float: left;
 	width: 50px;
+	height: 50px;
 
 }
+
 #twitter {
 	background: url(../images/Twitter_Icon.png)no-repeat center;
 	text-indent: -9999px;
@@ -445,11 +509,31 @@ footer li a{
 }
 
 footer li:hover {
-	-moz-transform:scale(1.2); 
-	-webkit-transform:scale(1.2);
-	-o-transform:scale(1.2);
-	opacity: .8;
+	-moz-transform:scale(.95); 
+	-webkit-transform:scale(.95);
+	-o-transform:scale(.95);
+	opacity: .9;
 }
+
+.navItem {
+	font-family: helvetica;
+	background-color: #6b6969;
+	width: 132px;
+	border-radius: 5px;
+	padding: 10px;
+	float: right;
+	color: white;
+	text-align: center;
+	text-shadow: none;
+	text-decoration: none;
+	margin: 30px 20px 0 0;
+}
+
+.navItem:hover {
+	background: #ff7800;
+
+}
+
 /* =============================================================================
    Media Queries
    ========================================================================== */
@@ -516,6 +600,10 @@ footer li:hover {
 			margin-left: 135px;
 	}
 	
+	#login-content:after, #login-content:before {
+		right: 10%;
+	}
+
 	.services {
 		margin-top: 20px;
 	}
@@ -551,8 +639,25 @@ footer li:hover {
 	.main-CTA > h2 {
 		font-size: 2.7em;
 	}
+	footer div{
+		width: 768px;
+	}
 	footer ul {
-	width: 768px;
+		float: left;
+		width: 375px;
+	}
+	.navItem {
+		font-family: helvetica;
+		background-color: #6b6969;
+		width: 132px;
+		border-radius: 5px;
+		padding: 10px;
+		float: right;
+		color: white;
+		text-align: center;
+		text-shadow: none;
+		text-decoration: none;
+		margin: 30px 20px 0 0;
 	}
 }
 /* All Mobile Sizes */
@@ -681,8 +786,22 @@ footer li:hover {
 		width: 416px;
 		height: 279px;
 	}
-	footer ul {
+	footer div{
 		width: 480px;
+	}
+	footer ul {
+		float: left;
+		width: 200px;
+	}
+	.navItem {
+		font-family: helvetica;
+		font-size: 13.5px;
+		background-color: #6b6969;
+		width: 100px;
+		border-radius: 5px;
+		padding: 10px;
+		float: right;
+		color: white;
 	}
 	
 	header h1:nth-of-type(1) {
@@ -842,12 +961,91 @@ footer li:hover {
 		float: none;
 	}
 	
+	footer div {
+		width: 300px;
+	}
+	
 	footer ul {
-		width: 320px;
+		float: left;
+		width: 175px;
+		margin-left: 7%;
+	}
+	.navItem {
+		display: none;
 	}
 	 
 }
 
+
+
+/* Testing footer button  */
+
+/************* MODAL *************/
+.overlay {
+	background: #333;
+	opacity: .8;
+	z-index: 10000;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.modal {
+	background: white;
+	width: 500px;
+	max-width: 996px;
+	z-index: 10001;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -220px;
+	margin-left: -250px;
+	border-radius: 5px;
+}
+
+#guest-modal {
+	padding: 10px;
+}
+
+    .formLayout
+    {
+        padding: 10px;
+        width: 450px;
+    }
+    
+    .formLayout label, .formLayout input
+    {
+        display: block;
+        width: 200px;
+        float: left;
+        margin-bottom: 10px;
+    }
+ 
+    .formLayout label
+    {
+        text-align: right;
+        padding-right: 20px;
+    }
+    
+    .formLayout input[type="submit"]
+    {
+		width: 200px;
+        margin-right: 30px;
+        float: right;
+        margin-bottom: 20px;
+    }
+ 
+    br
+    {
+        clear: left;
+        float: none;
+    }
+    
+	form footer {
+		color: red;
+		background: none;
+	}
 
 
 

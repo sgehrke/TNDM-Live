@@ -41,73 +41,75 @@
 				<li><a href="testimonials.html">Reviews</a></li>
 				<li><a href="mailto:djshaun@thenewdancemachine.com?Subject=TNDM%20DJ%20Inquiry">Contact us</a></li>
 				<li><a class="login" id="login-trigger" href="#">Sign In</a></li>
-		<form id="login-content" method="POST" action="http://www.thenewdancemachine.djintelligence.com/client/index.asp">
-			<p>
-				<label>Wedding Date:</label>
-				<select name="Month">
-					<option value="0">Month</option>
-					<option value="1">January</option>
-					<option value="2">February</option>
-					<option value="3">March</option>
-					<option value="4">April</option>
-					<option value="5">May</option>
-					<option value="6">June</option>
-					<option value="7">July</option>
-					<option value="8">August</option>
-					<option value="9">September</option>
-					<option value="10">October</option>
-					<option value="11">November</option>
-					<option value="12">December</option>
-				</select>
-				<select name="Day">
-					<option value="0">Day</option>
-					<option>1</option>
-					<option>2</option>
-					<option>3</option>
-					<option>4</option>
-					<option>5</option>
-					<option>6</option>
-					<option>7</option>
-					<option>8</option>
-					<option>9</option>
-					<option>10</option>
-					<option>11</option>
-					<option>12</option>
-					<option>13</option>
-					<option>14</option>
-					<option>15</option>
-					<option>16</option>
-					<option>17</option>
-					<option>18</option>
-					<option>19</option>
-					<option>20</option>
-					<option>21</option>
-					<option>22</option>
-					<option>23</option>
-					<option>24</option>
-					<option>25</option>
-					<option>26</option>
-					<option>27</option>
-					<option>28</option>
-					<option>29</option>
-					<option>30</option>
-					<option>31</option>
-				</select>
-				<select name="Year">
-					<option value="0">Year</option>
-					<option>2014</option>
-					<option>2015</option>
-					<option>2016</option>
-					<option>2017</option>
-					<option>2018</option>
-				</select>
-			</p>
-			<p>
-				<label>Password:</label>
-				<input type="password" maxlength="10" name="Password">
-			</p>
-				<input type="submit" value="submit">
-		</form>  
+			
+				<form id="login-content" class="formLayout" method="POST" action="http://www.thenewdancemachine.djintelligence.com/client/index.asp">
+				<p>
+					<label>Wedding Date:</label>
+					<select name="Month">
+						<option value="0">Month</option>
+						<option value="1">January</option>
+						<option value="2">February</option>
+						<option value="3">March</option>
+						<option value="4">April</option>
+						<option value="5">May</option>
+						<option value="6">June</option>
+						<option value="7">July</option>
+						<option value="8">August</option>
+						<option value="9">September</option>
+						<option value="10">October</option>
+						<option value="11">November</option>
+						<option value="12">December</option>
+					</select>
+					<select name="Day">
+						<option value="0">Day</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+						<option>11</option>
+						<option>12</option>
+						<option>13</option>
+						<option>14</option>
+						<option>15</option>
+						<option>16</option>
+						<option>17</option>
+						<option>18</option>
+						<option>19</option>
+						<option>20</option>
+						<option>21</option>
+						<option>22</option>
+						<option>23</option>
+						<option>24</option>
+						<option>25</option>
+						<option>26</option>
+						<option>27</option>
+						<option>28</option>
+						<option>29</option>
+						<option>30</option>
+						<option>31</option>
+					</select>
+					<select name="Year">
+						<option value="0">Year</option>
+						<option>2014</option>
+						<option>2015</option>
+						<option>2016</option>
+						<option>2017</option>
+						<option>2018</option>
+					</select>
+				</p>
+				<p>
+					<label>Password:</label>
+					<input type="password" maxlength="10" name="Password">
+				</p>
+					<input type="submit" value="submit">
+				</form>
+			  
 		</nav>			
 	</div>
 	</header>
@@ -121,7 +123,10 @@
 				</div>
 			</div>
 		</section><!-- end carousel -->
-		
+		<div class="videoPlayer">
+			<div></div>
+			<!-- 	This is the modal window -->
+		</div>
 	<section class="container main_content"><!-- Main container -->
 	    <section class="grid_4 ">
 	    	<h2>Success Stories</h2>
@@ -146,12 +151,15 @@
 	
 	</section><!-- End Main-container -->
 	
-	<footer>		
-		<ul>
-			<li><a id="twitter" href="https://twitter.com/TNDM_DJservice">Twitter</a></li>
-			<li><a id="facebook" href="https://www.facebook.com/pages/The-New-Dance-Machine/177951172234999">Facebook</a></li>
-			<li><a id="pinterest" href="http://www.pinterest.com/djshauntndm/">Pinterest</a></li>	
-		</ul>
+	<footer>	
+		<div>
+			<ul>
+				<li><a id="twitter" href="https://twitter.com/TNDM_DJservice">Twitter</a></li>
+				<li><a id="facebook" href="https://www.facebook.com/pages/The-New-Dance-Machine/177951172234999">Facebook</a></li>
+				<li><a id="pinterest" href="http://www.pinterest.com/djshauntndm/">Pinterest</a></li>
+			</ul>
+			<a href="#" class="navItem" id="guest-modal">Guest Requests</a>
+		</div>
 	</footer>	
 	<script src="js/scripts.js"></script>
 	<script>
@@ -171,3 +179,4 @@
 	</script>
 </body>
 </html> 
+

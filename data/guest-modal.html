@@ -7,50 +7,13 @@
 
 
 <aside id="guest-modal">
-	<form class="formLayout" method="post" action="https://thenewdancemachine.djintelligence.com/request/" onsubmit="return FrontPage_Form1_Validator(this)" name="FrontPage_Form1" language="JavaScript">
-          
-		
-		<h2>Guest Requests</h2><hr>
-		<p>Please enter the group name below that was assigned to the event you will be attending:</p>
-		
-			<label><b>Group</b>:</label>
-			<input type="text" name="ID" size="25" value="" maxlength="25"></br>
-			<label><b>Password</b>:</label>
-			<input type="password" name="Password" size="25" placeholder="if provided"></br>
-			<input type="submit" value="Access Request List"></br>
-			
-				
-		<footer>**<em>If you do not know your group name, please contact the person or organization hosting the event.</em></footer>
-
-	</form>
+	<div class="formLayout">
+		<h2>Contact Us</h2><hr>
+		<div id="dropdown">
+			<a href="https://thenewdancemachine.hbportal.co/schedule/60131ec9459c9b1a011e59ab">Pre-Booking</a>
+			 - OR -
+			<a href="">Client Meetings</a>
+		</div>
+		<p>**<em>If you need immediate assistance please call or text (920) 819-8098</em></p>
+	</div>
 </aside>
-<script language="JavaScript" type="text/javascript">
-
-	function FrontPage_Form1_Validator(theForm)
-	{
-	
-	  if (theForm.ID.value == "")
-	  {
-	    alert("Please enter a value for the \"Group\" field.");
-	    theForm.ID.focus();
-	    return (false);
-	  }
-	
-	  if (theForm.ID.value.length < 2)
-	  {
-	    alert("Please enter at least 2 characters in the \"Group\" field.");
-	    theForm.ID.focus();
-	    return (false);
-	  }
-	
-	  if (theForm.ID.value.length > 25)
-	  {
-	    alert("Please enter at most 25 characters in the \"Group\" field.");
-	    theForm.ID.focus();
-	    return (false);
-	  }
-	  return (true);
-	}
-
-
-</script>

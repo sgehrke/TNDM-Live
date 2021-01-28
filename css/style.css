@@ -335,6 +335,30 @@ nav ul li:nth-child(6) {
 	border: none;
 		
 }
+
+#dropdown {
+	padding: 20px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#dropdown a {
+	font-family: helvetica;
+	width: 132px;
+	border-radius: 5px;
+	text-align: center;
+	text-shadow: none;
+	text-decoration: none;
+	font-family: helvetica;
+	transition: all 0.3s ease 0s;
+	color: white;
+	background: #ff7800;
+	padding: 10px 30px;
+}
+
+#dropdown a:hover {
+	background: #5c9f4d;
+}
 /*================================================           		          FEATURED         ==============================================*/
 
 .feature-image {
@@ -516,21 +540,12 @@ footer li:hover {
 }
 
 .navItem {
-	font-family: helvetica;
-	background-color: #6b6969;
-	width: 132px;
-	border-radius: 5px;
-	padding: 10px;
-	float: right;
-	color: white;
-	text-align: center;
-	text-shadow: none;
-	text-decoration: none;
-	margin: 30px 20px 0 0;
+	
 }
 
 .navItem:hover {
 	background: #ff7800;
+	border-radius: 5px;
 
 }
 
